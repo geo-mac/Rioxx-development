@@ -14,7 +14,7 @@ The requirement to better describe related expressions and/or actionable resourc
 
 It should be noted that proposals arising from GitHub [issue 53](https://github.com/antleaf/rioxx/issues/53) highlighted a potential contradiction between the use of the `accessRightsURI` attribute (using the [COAR Access Rights vocabulary](https://vocabularies.coar-repositories.org/access_rights/)) and the potential need to express license content within `dc:relation`. For example, `accessRightsURI` communicates the (in)accessibility of a resource but does not communicate license conditions.
 
-![](/rioxx-model-possible.jpg)
+![](rioxx-model-possible.jpg)
 
 *Fig.2 Possible additions to dc:relation within Rioxx v.3 properties in release candidate 1.*
 
