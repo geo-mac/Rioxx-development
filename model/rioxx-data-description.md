@@ -4,7 +4,7 @@ This documentation arises from an RGG action emerging from the 09 December 2022,
 
 At time of writing, release candidate 1 encompasses the following properties (Fig.1), with a division between resource description at the 'root' level (pertaining to the version of record (VoR) and those at the 'expression' or 'actionable' level.
 
-![](/rioxx-model.jpg)
+![](rioxx-model.jpg)
 
 *Fig.1 Rioxx v.3 properties in release candidate 1, with attributes and values indicated.*
 
@@ -14,7 +14,7 @@ The requirement to better describe related expressions and/or actionable resourc
 
 It should be noted that proposals arising from GitHub [issue 53](https://github.com/antleaf/rioxx/issues/53) highlighted a potential contradiction between the use of the `accessRightsURI` attribute (using the [COAR Access Rights vocabulary](https://vocabularies.coar-repositories.org/access_rights/)) and the potential need to express license content within `dc:relation`. For example, `accessRightsURI` communicates the (in)accessibility of a resource but does not communicate license conditions.
 
-![](/home/g3om4c/Documents/Git/rioxx%20development/Rioxx%20development/model/rioxx-model-possible.jpg)
+![](/rioxx-model-possible.jpg)
 
 *Fig.2 Possible additions to dc:relation within Rioxx v.3 properties in release candidate 1.*
 
