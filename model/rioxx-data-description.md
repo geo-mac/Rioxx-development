@@ -4,7 +4,7 @@ This documentation arises from an RGG action emerging from the 09 December 2022,
 
 At time of writing, release candidate 1 encompasses the following properties (Fig.1), with a division between resource description at the 'root' level (pertaining to the version of record (VoR) and those at the 'expression' or 'actionable' level.
 
-![](/rioxx%20development/Rioxx%20development/model/rioxx-model.jpg)
+![](/rioxx-model.jpg)
 
 *Fig.1 Rioxx v.3 properties in release candidate 1, with attributes and values indicated.*
 
