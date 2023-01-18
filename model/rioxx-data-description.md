@@ -75,7 +75,9 @@ The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`.
 
 In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*.  
 
-If the distinction between root and expression/actionable levels is to be coherently maintained, then encoding dc:identifier at the root level introduces inconsistency.
+If the distinction between root and expression/actionable levels is to be coherently maintained, then encoding dc:identifier at the root level potentially introduces inconsistency.
+
+Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository
 
 ## 'Root' level vs. 'Expression/actionable' level
 
