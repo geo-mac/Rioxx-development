@@ -14,7 +14,7 @@ The requirement to better describe related expressions and/or actionable resourc
 
 `dc:relation` might therefore be extended to also include attributes for `rioxxterms:version`, `dc:format`, `ali:license`. (Fig.2) 
 
-It should be noted that proposals arising from GitHub [issue 53](https://github.com/antleaf/rioxx/issues/53) highlighted a potential contradiction between the use of the `accessRightsURI` attribute (using the [COAR Access Rights vocabulary](https://vocabularies.coar-repositories.org/access_rights/)) and the potential need to express license content within `dc:relation`. For example, `accessRightsURI` communicates the (in)accessibility of a resource but does not communicate license conditions. Moreover, it remains semantically unsafe to declare `ali:license` at the root level but not at the related expression level where license conditions may be different.
+It should be noted that proposals arising from GitHub [issue 53](https://github.com/antleaf/rioxx/issues/53) highlighted a potential contradiction between the use of the `accessRightsURI` attribute (using the [COAR Access Rights vocabulary](https://vocabularies.coar-repositories.org/access_rights/)) and the potential need to express license content within `dc:relation`. For example, `accessRightsURI` communicates the (in)accessibility of a resource but does not communicate license conditions. Moreover, it remains semantically unsafe to declare `ali:license` at the root level but not at the related expression level where license conditions may differ.
 
 ![](rioxx-model-possible.jpg)
 
