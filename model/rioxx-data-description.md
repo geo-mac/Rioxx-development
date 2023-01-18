@@ -65,9 +65,19 @@ Accepting that it is necessary communicate license data within these relations t
 
 The above example resolves licensing contradictions and improves the declaration of relation type.
 
+### dc:identifier: a description level inconsistency to be resolved
+
+The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`. As the Schema documentation notes:
+
+> dc:identifier MUST contain an HTTP(S) URI which is a persistent identifier for the resource. In repositories, this is typically a webpage which includes links to other related resources. It is RECOMMENDED that that a DOI, Handle, URN, or other persistent identification scheme be used. In the common case of a "splash-page" linking to related files (potentially in different formats), then one or more instances of the dc:relation property may be included in the Rioxx record to convey this and thereby direct harvesting software agents.
+
+> Note that dc:identifier should not be confused with rioxxterms:version_of_record.
+
+In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*.  
+
 ### 'Root' level vs. 'Expression/actionable' level
 
-Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which opens for the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinctions. 
+Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which appears in the opening passages of the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinction. This may also aid in communicating the importance of `dc:relation` to harvesting. 
 
 The quasi-FRBR-ized approach within the Schema echoes previous attempts to better encode relational associations, particularly within the Scholarly Works Application Profile (SWAP). However, unlike SWAP which deployed a FRBR model and which made this model explicit within its documentation, Rioxx uses similar modelling concepts but does not communicate this in the documentation. 
 
