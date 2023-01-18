@@ -75,8 +75,9 @@ The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`.
 
 In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*. However, if the distinction between root and expression/actionable levels is to be coherently maintained, then encoding `dc:identifier` at the root level potentially introduces inconsistency because the content of `dc:identifier` pertains to data at the expression level (i.e. within `dc:relation`).
 
-Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository disrupts the root-expression 'model'. Maintaining this model would therefore entail the inclusion of `dc:identifier` or a variant attribute within `dc:relation`, e.g. a 'pid' attribute: 
+Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository disrupts the root-expression 'model'. Maintaining this model would therefore entail the inclusion of `dc:identifier` or a variant attribute within `dc:relation`, e.g. a `pid` attribute: 
 
+![](rioxx-model-identifier.jpg)
 
 ```
 
@@ -99,7 +100,12 @@ Root level description pertains to the VoR. Inclusion of, say, a persistent iden
 
 ```
 
-This solution makes sense conceptually, and at first appears workable; but it creates redundancy in the use of `dc:identifier` at the root level. This issue needs resolving by the RGG.
+This solution makes some conceptual, and at first appears workable, but there are consequences:
+
+* It creates redundancy in the use of `dc:identifier` at the root level, in turn prompting questions about the need for `rioxxterms:version_of_record` if the same data can be expressed within `dc:identifier `. 
+* It may introduce complexity in the property content of `dc:relation`. Since `dc:relation` is being used to capture both expressions/actionable resources *and* 'dumb' relations to, say, research data or software, the solution presented means that idenitifiers of various flavours will be expressed as property content in some instances, but also as attributes -- but also not at all.
+
+This is an issue needs resolving by the RGG. In addition, 
 
 
 
