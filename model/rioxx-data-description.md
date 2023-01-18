@@ -75,6 +75,8 @@ The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`.
 
 In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*.  
 
+If the distinction between root and expression/actionable levels is to be coherently maintained, then encoding dc:identifier at the root level introduces inconsistency.
+
 ## 'Root' level vs. 'Expression/actionable' level
 
 Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which appears in the opening passages of the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinction. This may also aid in communicating the importance of `dc:relation` to harvesting. 
