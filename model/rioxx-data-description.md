@@ -40,7 +40,7 @@ The communication of both a related expression and harvestable resource (an acce
 
 ```
 
-Note that the accepted author manuscript is treated more comprehensively. While the accepted manuscript is an expression of the VoR, it is also a resource upon which harvesting software may take action.
+Note that the accepted author manuscript is treated more comprehensively. While the accepted manuscript is an expression of the VoR, it is also a resource upon which harvesting software may take action. Inclusion of these attributes is dependent on the relation type and therefore would be 'optional'.
 
 Accepting that it is necessary communicate license data within these relations too, we might also accept that using both [schema.org](https://schema.org/) and [COAR Resource Type Genres](https://vocabularies.coar-repositories.org/resource_types/) within Rioxx may cause confusion or contradiction. schema.org affords greater general interoperability but, as a vocabulary, lacks specificity in defining expressions of scholarly objects, such as preprints, and lacks detail in data or software type description. We might therefore incorporate both license declarations and COAR Resource Types as follows:
 
