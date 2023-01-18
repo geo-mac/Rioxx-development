@@ -73,13 +73,10 @@ The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`.
 
 > Note that dc:identifier should not be confused with rioxxterms:version_of_record.
 
-In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*.  
+In other words, `dc:identifier` is to be used to 'persistently identify' the resource, as per technical requirements arising from a growing number of policies, e.g. Plan S, UKRI Open Access Policy, etc. Meanwhile `dc:relation` encodes the *harvestable* location of the scholarly resource and `rioxxterms:version_of_record` encodes an idenitifier for the *VoR*. However, if the distinction between root and expression/actionable levels is to be coherently maintained, then encoding `dc:identifier` at the root level potentially introduces inconsistency because the content of `dc:identifier` pertains to data at the expression level (i.e. within `dc:relation`).
 
-If the distinction between root and expression/actionable levels is to be coherently maintained, then encoding dc:identifier at the root level potentially introduces inconsistency.
+Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository disrupts the root-expression 'model'. Maintaining this model would therefore entail the inclusion of `dc:identifier` or a variant attribute within `dc:relation`, e.g. a 'pid' attribute: 
 
-Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository
-
-This solution at first appears workable but it creates redundancy in the use of `dc:identifier` at the root level.
 
 ```
 
@@ -101,6 +98,10 @@ This solution at first appears workable but it creates redundancy in the use of 
 </dc:relation>
 
 ```
+
+This solution makes sense conceptually, and at first appears workable; but it creates redundancy in the use of `dc:identifier` at the root level. This issue needs resolving by the RGG.
+
+
 
 ## 'Root' level vs. 'Expression/actionable' level
 
