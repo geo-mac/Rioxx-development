@@ -67,4 +67,8 @@ The above example resolves licensing contradictions and improves the declaration
 
 ### 'Root' level vs. 'Expression/actionable' level
 
+Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which opens for the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinctions. 
+
+The quasi-FRBR-ized approach within the Schema
+
 
