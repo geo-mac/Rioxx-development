@@ -64,3 +64,7 @@ Accepting that it is necessary communicate license data within these relations t
 ```
 
 The above example resolves licensing contradictions and improves the declaration of relation type.
+
+### 'Root' level vs. 'Expression/actionable' level
+
+
