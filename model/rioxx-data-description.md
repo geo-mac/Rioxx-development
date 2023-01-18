@@ -79,6 +79,29 @@ If the distinction between root and expression/actionable levels is to be cohere
 
 Root level description pertains to the VoR. Inclusion of, say, a persistent identifier within `dc:identifier` resolving to a scholarly open repository
 
+This solution at first appears workable but it creates redundancy in the use of `dc:identifier` at the root level.
+
+```
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2021-07-28" 
+    resource_exposed_date="2021-08-03" 
+    rioxx_version="http://purl.org/coar/version/c_ab4af688f83e57aa"
+    pid="https://doi.org/10.17868/accepted-manuscript-doi"
+    accessRightsURI="http://purl.org/coar/access_right/c_abf2"
+    license="http://creativecommons.org/licenses/by/4.0/"
+    format="application/pdf">
+            https://www.repository.org/article_1234567.pdf
+</dc:relation>
+
+<dc:relation type="http://purl.org/coar/resource_type/c_cb28" 
+    accessRightsURI="http://purl.org/coar/access_right/c_abf2" 
+    format="text/csv">
+            https://doi.org/10.17868/dataset_123456
+</dc:relation>
+
+```
+
 ## 'Root' level vs. 'Expression/actionable' level
 
 Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which appears in the opening passages of the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinction. This may also aid in communicating the importance of `dc:relation` to harvesting. 
