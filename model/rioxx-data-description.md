@@ -67,7 +67,7 @@ Accepting that it is necessary communicate license data within these relations t
 
 The above example resolves licensing contradictions and improves the declaration of relation type.
 
-## dc:identifier: a description level inconsistency to be resolved
+## dc:identifier: level inconsistency to be resolved
 
 The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`. As the Schema documentation notes:
 
