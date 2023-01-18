@@ -1,6 +1,8 @@
 ## Rioxx v3 - documenting data - 17 January 2023
 
-This documentation arises from an RGG action emerging from the 09 December 2022, in turn emerging from [a recent audit of properties](https://github.com/antleaf/rioxx/issues/53). An audit of Rioxx properties and their semantics was initiated, with additional focus on those that might be usefully be contained within `dc:relation` to better communicate related but actionable resources. It is increasingly necessary to model these relationships within scholarly metadata since the scholarly publication process is increasingy fluid, often resulting in several expressions of the same intelletual object, as well as related entities (e.g. open data, software, etc.).
+This documentation arises from an RGG action emerging from the 09 December 2022, in turn emerging from [a recent audit of properties](https://github.com/antleaf/rioxx/issues/53). 
+
+An audit of Rioxx properties and their semantics was initiated, with additional focus on those that might be usefully be contained within `dc:relation` to better communicate related but actionable resources. It is increasingly necessary to model these relationships within scholarly metadata since the scholarly publication process is increasingy fluid, often resulting in several expressions of the same intelletual object, as well as related entities (e.g. open data, software, etc.).
 
 At time of writing, [release candidate 1](https://www.rioxx.net/profiles/v3-0-rc-1/) encompasses the following properties (Fig.1), with a division between resource description at the 'root' level (pertaining to the version of record (VoR) and those at the 'expression' or 'actionable' level.
 
