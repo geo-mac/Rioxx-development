@@ -69,6 +69,6 @@ The above example resolves licensing contradictions and improves the declaration
 
 Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which opens for the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinctions. 
 
-The quasi-FRBR-ized approach within the Schema
+The quasi-FRBR-ized approach within the Schema echoes previous attempts to better encode relational associations, particularly within the Scholarly Works Application Profile (SWAP). However, unlike SWAP which deployed a FRBR model and which made this model explicit within its documentation, Rioxx uses similar modelling concepts but does not communicate this in the documentation. 
 
 
