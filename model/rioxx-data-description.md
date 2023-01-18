@@ -100,14 +100,12 @@ Root level description pertains to the VoR. Inclusion of, say, a persistent iden
 
 ```
 
-This solution makes some conceptual, and at first appears workable, but there are consequences:
+This solution makes some conceptual sense, and at first appears workable, but there are consequences:
 
 * It creates redundancy in the use of `dc:identifier` at the root level, in turn prompting questions about the need for `rioxxterms:version_of_record` if the same data can be expressed within `dc:identifier `. 
-* It may introduce complexity in the property content of `dc:relation`. Since `dc:relation` is being used to capture both expressions/actionable resources *and* 'dumb' relations to, say, research data or software, the solution presented means that idenitifiers of various flavours will be expressed as property content in some instances, but also as attributes -- but also not at all.
+* It may introduce complexity in the property content of `dc:relation`. Since `dc:relation` is being used to capture both expressions/actionable resources *and* 'dumb' relations to, say, research data or software, the solution presented means that idenitifiers of various flavours will be expressed as property content in some instances, and as attributes -- but also not at all or in varied permutations.
 
-This is an issue needs resolving by the RGG. In addition, 
-
-
+This is an issue needs resolving by the RGG.
 
 ## 'Root' level vs. 'Expression/actionable' level
 
