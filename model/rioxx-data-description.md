@@ -71,6 +71,8 @@ Accepting that it is necessary communicate license data within these relations t
 
 The above example resolves licensing contradictions and improves the declaration of relation type.
 
+**This approach needs approval by the RGG.**
+
 ## dc:identifier: level inconsistency to be resolved
 
 The Rioxx release candidate 1 documents a change in the use of `dc:idenitifier`. As the Schema documentation notes:
@@ -111,11 +113,13 @@ This solution makes some conceptual sense, and at first appears workable, but th
 * It creates redundancy in the use of `dc:identifier` at the root level, in turn prompting questions about the need for `rioxxterms:version_of_record` if the same data can be expressed within `dc:identifier `. 
 * It may introduce uncertainty in the property content of `dc:relation`. Since `dc:relation` is being used to capture both expressions/actionable resources *and* 'dumb' relations to, say, research data or software, the solution presented means that idenitifiers of various flavours will be expressed as property content in some instances, and as attributes -- but also not at all or in varied permutations.
 
-This is an issue needs resolving by the RGG.
+**This is an issue needs resolving by the RGG.**
 
 ## 'Root' level vs. 'Expression/actionable' level
 
 Maintaining the distinction between resource description within Rioxx at the 'root' and 'expression / actionable' levels is key to ensuring semantic consistency within the Schema. It may be necessary for the RGG to consider re-structuring the Rioxx Schema documentation to communicate the different levels of description since confusion in its application may arise without it. This may entail an expansion of the 'Terminology' section which appears in the opening passages of the documentation, or separating `dc:relation` into a separate section, thereby emphasizing the distinction. This may also aid in communicating the importance of `dc:relation` to harvesting. 
+
+**This is an issue needs agreement by the RGG.**
 
 The quasi-FRBR-ized approach within the Schema echoes previous attempts to better encode relational associations, particularly within the Scholarly Works Application Profile (SWAP). However, unlike SWAP which deployed a FRBR model and which made this model explicit within its documentation, Rioxx uses similar modelling concepts but does not communicate this in the documentation. 
 
