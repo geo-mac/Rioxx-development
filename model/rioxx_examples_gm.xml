@@ -1,0 +1,84 @@
+## RIOXX SCHEMA V2
+## an item with an accepted manuscript in the repository and a link to the published version DOI
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v2.0/rioxx/ http://www.rioxx.net/schema/v2.0/rioxx/rioxx.xsd">
+<ali:free_to_read></ali:free_to_read>
+<ali:license_ref start_date="2019-12" >http://creativecommons.org/licenses/by-nc-nd/4.0</ali:license_ref>
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:format>application/pdf</dc:format>
+<dc:identifier>https://eprints.gla.ac.uk/190277/7/190277.pdf</dc:identifier>
+<dc:language>en</dc:language>
+<dc:publisher>Elsevier</dc:publisher>
+<dc:source>0927-5371</dc:source>
+<dc:title>Can job search assistance improve the labour market integration of refugees? Evidence from a field experiment</dc:title>
+<dcterms:dateAccepted>2019-07-02</dcterms:dateAccepted>
+<rioxxterms:apc>not required</rioxxterms:apc>
+<rioxxterms:author id="http://orcid.org/0000-0002-0144-8566" >Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Giesing, Yvonne</rioxxterms:author>
+<rioxxterms:author>Laurentsyeva, Nadzeya</rioxxterms:author>
+<rioxxterms:publication_date>2019-12</rioxxterms:publication_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type>
+<rioxxterms:version>AM</rioxxterms:version>
+<rioxxterms:version_of_record>http://doi.org/10.1016/j.labeco.2019.07.001</rioxxterms:version_of_record>
+</rioxx>
+
+## RIOXX SCHMA V3
+## as above, publisher version and accepted version now included in DC:Relation
+
+## Following elements removed or shifted to relation:
+## ali:free_to_read (no longer required)
+## ali:license_ref (now belongs with relation)
+## dc:format (no longer reqired, its a landing page)
+## rioxxterms:apc (no longer required)
+## rioxxterms:version (now belongs with relation)
+## rioxxterms:version_of_record (no longer reqired, its just another relation)
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:identifier>https://eprints.gla.ac.uk/190277/</dc:identifier> ## should now be a PID (The landing page)
+<dc:language>en</dc:language>
+<dc:publisher>Elsevier</dc:publisher>
+<dc:source>0927-5371</dc:source>
+<dc:title>Can job search assistance improve the labour market integration of refugees? Evidence from a field experiment</dc:title>
+<dc:coverage></dc:coverage>
+<dc:subject></dc:subject>
+<dcterms:dateAccepted>2019-07-02</dcterms:dateAccepted>
+<rioxxterms:author id="http://orcid.org/0000-0002-0144-8566" >Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Giesing, Yvonne</rioxxterms:author>
+<rioxxterms:author>Laurentsyeva, Nadzeya</rioxxterms:author>
+<rioxxterms:contributor></rioxxterms:contributor>
+<rioxxterms:publication_date>2019-12</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2021-01-06</rioxxterms:record_public_release_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type>
+<rioxxterms:grant></rioxxterms:grant>
+<rioxxterms:project></rioxxterms:project>
+
+## accepted manuscript version
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2019-07-12" 
+    resource_exposed_date="2021-01-06" 
+    rioxx_version="http://purl.org/coar/version/c_ab4af688f83e57aa"
+    accessRightsURI="http://purl.org/coar/access_right/c_abf2"
+    license="http://creativecommons.org/licenses/by-nc-nd/4.0"
+    format="application/pdf">
+            https://eprints.gla.ac.uk/190277/7/190277.pdf
+</dc:relation>
+
+## publisher version
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    resource_exposed_date="2019-12" 
+    rioxx_version="http://purl.org/coar/version/c_970fb48d4fbd8a85"
+    format="application/pdf">
+            http://doi.org/10.1016/j.labeco.2019.07.001
+</dc:relation>
+
+</rioxx>
+
+
+## Questions
+
+## Do we need 'format' as a Version of Record relation attribute?  <!-- I would say 'no', because we typically do not have authority of assertion -- however, we have to also accept that very occasionally a repository may be the publisher of a VoR. For example, Strathprints functions as an overlay journal and also an official location for conference paper publication. It therefore needs to remain as an option; just optional -->
+## Do we need 'resource_exposed_date' as a Version of Record relation attribute? <!-- Same policy as 'format' -->
+## Do we need 'license_start_date' to be an attribute of relation
