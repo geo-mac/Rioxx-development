@@ -1,0 +1,91 @@
+## RIOXX SCHEMA V2
+## an item with an accepted manuscript in the repository and a link to the published version DOI
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v2.0/rioxx/ http://www.rioxx.net/schema/v2.0/rioxx/rioxx.xsd">
+<ali:free_to_read></ali:free_to_read>
+<ali:license_ref start_date="2019-12" >http://creativecommons.org/licenses/by-nc-nd/4.0</ali:license_ref>
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:format>application/pdf</dc:format>
+<dc:identifier>https://eprints.gla.ac.uk/190277/7/190277.pdf</dc:identifier>
+<dc:language>en</dc:language>
+<dc:publisher>Elsevier</dc:publisher>
+<dc:source>0927-5371</dc:source>
+<dc:title>Can job search assistance improve the labour market integration of refugees? Evidence from a field experiment</dc:title>
+<dcterms:dateAccepted>2019-07-02</dcterms:dateAccepted>
+<rioxxterms:apc>not required</rioxxterms:apc>
+<rioxxterms:author id="http://orcid.org/0000-0002-0144-8566" >Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Giesing, Yvonne</rioxxterms:author>
+<rioxxterms:author>Laurentsyeva, Nadzeya</rioxxterms:author>
+<rioxxterms:publication_date>2019-12</rioxxterms:publication_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type>
+<rioxxterms:version>AM</rioxxterms:version>
+<rioxxterms:version_of_record>http://doi.org/10.1016/j.labeco.2019.07.001</rioxxterms:version_of_record>
+</rioxx>
+
+## RIOXX SCHMA V3
+## as above, publisher version and accepted version now included in DC:Relation
+
+## Following elements removed or shifted to relation:
+## ali:free_to_read (no longer required) <!-- @g3om4c Yes, we ditched this in v.3. -->
+## ali:license_ref (now belongs with relation) <!-- @g3om4c Yes, if we are not assuming the VoR is the root from which other expressions hang off, then license_ref has to accompany expressions, as mapped in fig. 2 here https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-data-description.md -->
+## dc:format (no longer reqired, its a landing page) <!-- @g3om4c Agreed. VoR is no longer described at 'root' level. -->
+## rioxxterms:apc (no longer required) <!-- @g3om4c Yes, we ditched it. A hangover from RCUK days. -->
+## rioxxterms:version (now belongs with relation) <!-- @g3om4c Agreed. We no longer describe VoR at root. -->
+## rioxxterms:version_of_record (no longer reqired, its just another relation) <!-- @g3om4c Yes, agreed -- this is the corollary of ditching the VoR root concept. -->
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:identifier>https://eprints.gla.ac.uk/190277/</dc:identifier> ## should now be a PID (The landing page)
+
+<!-- @g3om4c We have to think carefully about including dc:identifier (for the PID) at the 'root' level. This is -- I think! -- where we left things at the end of the meeting. But it breaks the 'model' (such that there is one!). This is what I was getting at here: https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-model-identifier.jpg. Does it introduce inconsistency *not* to declare dc:identifier in dc:relation when describing the AAM? Or is this an example of pushing everything down into dc:relation, as PW was concerned about? I am actually an advocate for the 'work' approach but I accept that it is probably too complicated to implement in practice, and many repositories will not buy into the conceptual approach. Retaining dc:identifier at the 'root' would be an acceptance that we are describing a 'work', of which there are expressions, including an AAM and a VoR. What are your thoughts? Incidentally, this argument holds for dc:publisher, dc:source , dc:type too, all of which might be reasonably be expected to be communicated within the VoR expression.
+
+The other thing we should perhaps consider is that this is how the metadata is modelled for OAI-PMH purposes but not necessarily how repository editors or similar will describe the resource within the repository UI.-->
+
+<dc:language>en</dc:language>
+<dc:publisher>Elsevier</dc:publisher> 
+<dc:source>0927-5371</dc:source>
+<dc:title>Can job search assistance improve the labour market integration of refugees? Evidence from a field experiment</dc:title>
+<dc:coverage></dc:coverage>
+<dc:subject></dc:subject>
+<dcterms:dateAccepted>2019-07-02</dcterms:dateAccepted>
+<rioxxterms:author id="http://orcid.org/0000-0002-0144-8566" >Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Giesing, Yvonne</rioxxterms:author>
+<rioxxterms:author>Laurentsyeva, Nadzeya</rioxxterms:author>
+<rioxxterms:contributor></rioxxterms:contributor>
+<rioxxterms:publication_date>2019-12</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2021-01-06</rioxxterms:record_public_release_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type> 
+<rioxxterms:grant></rioxxterms:grant>
+<rioxxterms:project></rioxxterms:project>
+
+## accepted manuscript version
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2019-07-12" 
+    resource_exposed_date="2021-01-06" 
+    rioxx_version="http://purl.org/coar/version/c_ab4af688f83e57aa"
+    accessRightsURI="http://purl.org/coar/access_right/c_abf2"
+    license_ref="http://creativecommons.org/licenses/by-nc-nd/4.0" 
+    format="application/pdf">
+            https://eprints.gla.ac.uk/190277/7/190277.pdf
+</dc:relation>
+
+<!-- @g3om4c Altered attribute name of license to license_ref to better reflect ali:license_ref. Not doing this previously was an oversight on my part with the documentation. -->
+
+## publisher version
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    resource_exposed_date="2019-12" 
+    rioxx_version="http://purl.org/coar/version/c_970fb48d4fbd8a85"
+    format="application/pdf">
+            http://doi.org/10.1016/j.labeco.2019.07.001
+</dc:relation>
+
+</rioxx>
+
+
+## Questions
+
+## Do we need 'format' as a Version of Record relation attribute?  <!-- @g3om4c I would say 'no', because we typically do not have authority of assertion -- however, we have to also accept that very occasionally a repository may be the publisher of a VoR. For example, Strathprints functions as an overlay journal and also an official location for conference paper publication (real use cases). It therefore needs to remain as an option; just optional -->
+## Do we need 'resource_exposed_date' as a Version of Record relation attribute? <!-- @g3om4c Same policy as 'format' above -->
+## Do we need 'license_start_date' to be an attribute of relation <!-- @g3om4c OK, this maybe out of kilter with others (or maybe not!) but I have never really considered these dates particularly useful, because the same data can usually be inferred from other properties, e.g. combination of accessRightsURI & accessibility of the file, resource_exposed_date, etc. I omitted them in the recent documentation because this was my thinking. I would therefore be inclined to say 'no'. But I could be wrong. The NISO Access License and Indicators documentation for license_ref is purportedly to help publishers "express how usage rights might change over time" -- and I note that the recent revisions to standard has largely been undertaken by publishers.  Despite being mandatory in Rioxx v2.0, start_date is not mandatory within the NISO Access License and Indicators documentation.--> 

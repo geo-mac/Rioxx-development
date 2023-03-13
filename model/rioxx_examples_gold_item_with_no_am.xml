@@ -1,0 +1,84 @@
+## RIOXX SCHEMA V2
+## an item with no accepted manuscript in the repository and a copy of the published article
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v2.0/rioxx/ http://www.rioxx.net/schema/v2.0/rioxx/rioxx.xsd" >
+<ali:free_to_read></ali:free_to_read>
+<ali:license_ref start_date="2019-06-24" >http://creativecommons.org/licenses/by/4.0</ali:license_ref>
+<dc:description>Traditionally, chemists have relied on years of training and accumulated experience in order to discov-er new molecules. But the space of possible molecules so vast, only a limited exploration with the tra-ditional methods can be ever possible. This means that many opportunities for the discovery of inter-esting phenomena have been missed, and in addition, the inherent variability of these phenomena can make them difficult to control and understand. The current state-of-the-art is moving towards the de-velopment of automated and eventually fully autonomous systems coupled with in-line analytics and decision-making algorithms. Yet even these, despite the substantial progress achieved recently, still cannot easily tackle large combinatorial spaces as they are limited by the lack of high-quality data. Herein, we explore the utility of active learning methods for exploring the chemical space by compar-ing collaboration between human experimenters with an algorithm-based search, against their perfor-mance individually to probe the self-assembly and crystallization of the polyoxometalate cluster Na6[Mo120Ce6O366H12(H2O)78]·200H2O (1). We show that the robot-human teams are able to increase the prediction accuracy to 75.6±1.8%, from 71.8±0.3% with the algorithm alone and 66.3±1.8% from only the human experimenters demonstrating that human-robot teams beat robots or humans working alone.</dc:description>
+<dc:format>application/pdf</dc:format>
+<dc:identifier>https://eprints.gla.ac.uk/185445/1/185445.pdf</dc:identifier>
+<dc:language>en</dc:language>
+<dc:publisher>American Chemical Society</dc:publisher>
+<dc:source>1549-9596</dc:source>
+<dc:title>Intuition-enabled machine learning beats the competition when joint human-robot teams perform inorganic chemical experiments</dc:title>
+<dcterms:dateAccepted>2019-04-26</dcterms:dateAccepted>
+<rioxxterms:author>Duros, Vasilios</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-2211-4389" >Grizou, Jonathan</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-5222-9611" >Sharma, Abhishek</rioxxterms:author>
+<rioxxterms:author>Mehr, S. Hessam M.</rioxxterms:author>
+<rioxxterms:author>Bubliauskas, Andrius</rioxxterms:author>
+<rioxxterms:author>Frei, Przemyslaw</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-0086-5173" >Miras, Haralampos N.</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0001-8035-5757" >Cronin, Leroy</rioxxterms:author>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >Advanced Mass Spectrometry Kit for Controlling Chemical Robots and Exploring Complex Chemical Systems</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >Programmable Molecular Metal Oxides (PMMOs) - From Fundamentals to Application</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >The Multi-Corder: Poly-Sensor Technology</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >Synthetic Biology applications to Water Supply and Remediation</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >A Digital DNA Nano Writer (DNA NanoFab)</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" >Programmable 'Digital' Synthesis for Discovery and Scale-up of Molecules, Clusters and Nanomaterials</rioxxterms:project>
+<rioxxterms:project funder_name="European Research Council (ERC)" >SMARTPOM: Artificial-Intelligence Driven Discovery and Synthesis of Polyoxometalate Clusters</rioxxterms:project>
+<rioxxterms:publication_date>2019-06-24</rioxxterms:publication_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type>
+<rioxxterms:version>VoR</rioxxterms:version>
+<rioxxterms:version_of_record>http://doi.org/10.1021/acs.jcim.9b00304</rioxxterms:version_of_record>
+</rioxx>
+
+
+## RIOXX SCHEMA V3
+## an item with no accepted manuscript in the repository and a related the published article
+
+## Questions:
+## How do we model the local copy of the published version?  Identifer = https://eprints.gla.ac.uk/185445/1/185445.pdf ?
+## no license info ?
+## no format info ?
+
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:identifier>https://eprints.gla.ac.uk/185445/</dc:identifier> ## should now be a PID (The landing page)
+<dc:language>en</dc:language>
+<dc:publisher>American Chemical Society</dc:publisher>
+<dc:source>1549-9596</dc:source>
+<dc:title>Intuition-enabled machine learning beats the competition when joint human-robot teams perform inorganic chemical experiments</dc:title>
+<dc:coverage></dc:coverage>
+<dc:subject></dc:subject>
+<dcterms:dateAccepted>2019-04-26</dcterms:dateAccepted>
+<rioxxterms:author id="http://orcid.org/0000-0002-0144-8566" >Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Duros, Vasilios</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-2211-4389" >Grizou, Jonathan</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-5222-9611" >Sharma, Abhishek</rioxxterms:author>
+<rioxxterms:author>Mehr, S. Hessam M.</rioxxterms:author>
+<rioxxterms:author>Bubliauskas, Andrius</rioxxterms:author>
+<rioxxterms:author>Frei, Przemyslaw</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0002-0086-5173" >Miras, Haralampos N.</rioxxterms:author>
+<rioxxterms:author id="http://orcid.org/0000-0001-8035-5757" >Cronin, Leroy</rioxxterms:author>
+<rioxxterms:contributor></rioxxterms:contributor>
+<rioxxterms:publication_date>2019-06-24</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2019-04-26</rioxxterms:record_public_release_date>
+<rioxxterms:type>Journal Article/Review</rioxxterms:type>
+<rioxxterms:grant></rioxxterms:grant>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/P00153X/1</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/J015156/1</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/K021966/1</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/K038885/1</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/L015668/1</rioxxterms:project>
+<rioxxterms:project funder_name="Engineering and Physical Sciences Research Council (EPSRC)" funder_id="">EP/L023652/1</rioxxterms:project>
+<rioxxterms:project funder_name="European Research Council (ERC)">670467</rioxxterms:project>
+
+## publisher version
+
+<dc:relation type="http://purl.org/coar/resource_type/c_6501" 
+    rioxx_version="http://purl.org/coar/version/c_970fb48d4fbd8a85">
+            http://doi.org/10.1021/acs.jcim.9b00304
+</dc:relation>
+
+</rioxx>
