@@ -14,6 +14,8 @@ Each example uses real data, taken from a number of UK repositories, including G
 
 All examples offer variations of other associative relations via `dc:relation`, such as relations to datasets, software, other expressions of the resource (e.g. preprint, AAM, VoR, etc.).
 
+All examples supplant the schema.org for the COAR Resource Type vocabulary.
+
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy! ;-)
 
 All examples include annotations within the XML, to aid human readability.
