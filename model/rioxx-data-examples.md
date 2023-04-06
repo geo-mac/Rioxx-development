@@ -16,6 +16,8 @@ All examples offer variations of other associative relations via `dc:relation`, 
 
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy! ;-)
 
+All examples include annotations within the XML, to aid human readability.
+
 ### Example 1
 An instance in which an AAM is not being exposed via the repository and instead a Gold VoR. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub
 ```
