@@ -371,3 +371,81 @@ Demonstration of Rioxx used for describing an open grey literature deposit, ther
 
 </rioxx>
 ```
+### Example 7
+Demonstration of Rioxx, following meeting of 19 April 2023, with the following adjustments:
+
+* MIME types unsupported for relational links to multipart external resources, such as datasets. `format` therefore dropped as an attribute in these cases
+* Inclusion of `deposit_host="local"` attributes in dc:relation (with `deposit_host="external"` communicating the opposite)
+* Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
+* Inclusion of `rel="item"` attribute in `dc:relation`
+```
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
+<dc:language>en</dc:language>
+<dc:publisher uri="https://isni.org/isni/0000000109440166">American Chemical Society</dc:publisher>
+<dc:source>1549-9596</dc:source>
+<dc:title>Intuition-enabled machine learning beats the competition when joint human-robot teams perform inorganic chemical experiments</dc:title>
+<dcterms:dateAccepted>2019-04-26</dcterms:dateAccepted>
+<rioxxterms:author uri="https://orcid.org/0000-0002-0144-8566">Battisti, Michele</rioxxterms:author>
+<rioxxterms:author>Duros, Vasilios</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0002-2211-4389">Grizou, Jonathan</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0002-5222-9611">Sharma, Abhishek</rioxxterms:author>
+<rioxxterms:author>Mehr, S. Hessam M.</rioxxterms:author>
+<rioxxterms:author>Bubliauskas, Andrius</rioxxterms:author>
+<rioxxterms:author>Frei, Przemyslaw</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0002-0086-5173">Miras, Haralampos N.</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0001-8035-5757">Cronin, Leroy</rioxxterms:author>
+<rioxxterms:publication_date>2019-06-24</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2019-04-26</rioxxterms:record_public_release_date>
+<rioxxterms:type uri="https://purl.org/coar/resource_type/c_2df8fbb1">research article</rioxxterms:type>
+<rioxxterms:grant
+    funder_name="Arts and Humanities Research Council"
+    funder_id="https://ror.org/0505m1554">
+    AH/W007622/1
+</rioxxterms:grant>
+<rioxxterms:grant
+    funder_name="Wellcome Trust"
+    funder_id="https://isni.org/isni/0000000404277672">
+    https://doi.org/10.35802/218671
+</rioxxterms:grant>
+<rioxxterms:project>
+    https://handle.net/10378.1/1590366
+</rioxxterms:project>
+
+<!-- 'Work-esque' description at root level -->
+<dc:identifier rel="collection">https://oai.core.ac.uk/oai:eprints.gla.ac.uk:190277</dc:identifier>
+
+<!-- relation to 'expression' of harvestable content, etc. -->
+<dc:relation type="https://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2019-07-12" 
+    resource_exposed_date="2021-01-06"
+	rioxx_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+    pid="https://oai.core.ac.uk/oai:eprints.gla.ac.uk:190277"
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2"
+    license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0" 
+    format="application/pdf"
+	deposit_host="local"
+	rel="item">
+            https://eprints.gla.ac.uk/190277/7/190277.pdf
+</dc:relation>
+
+<!-- Other expressions - publisher version -->
+<dc:relation type="https://purl.org/coar/resource_type/c_6501" 
+    rioxx_version="https://purl.org/coar/version/c_970fb48d4fbd8a85">
+            https://doi.org/10.1021/acs.jcim.9b00304
+</dc:relation>
+
+<!-- Other expressions - preprint (author's original - JAV) -->
+<dc:relation type="https://purl.org/coar/resource_type/c_816b" 
+    rioxx_version="https://purl.org/coar/version/c_b1a7d7d4d402bcce">
+            https://doi.org/10.26434/chemrxiv.7712453.v1
+</dc:relation>
+
+<!-- related  dataset -->
+<dc:relation type="https://purl.org/coar/resource_type/c_ddb1" 
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
+            https://doi.org/10.17868/dataset_123456
+</dc:relation>
+
+</rioxx>
+```
