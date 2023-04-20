@@ -376,10 +376,12 @@ Demonstration of Rioxx used for describing an open grey literature deposit, ther
 ### Example 7
 Demonstration of Rioxx, following meeting of 19 April 2023, with the following adjustments:
 
-* MIME types unsupported for relational links to multipart external resources, such as datasets. `format` therefore dropped as an attribute in these cases, but also all other external relations where there is limited authority of assertion
+* MIME types unsupported for relational links to multipart external resources, such as datasets. `format` therefore dropped as an attribute in these cases, but also all other external relations where there is limited authority of assertion (this seems obvious but not something any of us have commented on up to now...)
 * Inclusion of `deposit_host="local"` attributes in dc:relation (with `deposit_host="external"` communicating the opposite)
 * Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
 * Inclusion of `rel="item"` attribute in `dc:relation`
+
+The suggested inclusion of the Signposting attributes was a good one, as it provides a conceptual tool for users of the schema to better understand the root vs. expression/relations modelling, as well as tipping a hat to Signposting. But is it meaningful metadata for harvesters/aggregators?
 ```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
 <dc:description>We conducted a field experiment to evaluate the impact of job search assistance on the employment of recently arrived refugees in Germany. The treatment group received job-matching support: an NGO identified suitable vacancies and sent the refugees’ CVs to employers. Six months after the start of the treatment, we find no evidence for positive treatment effects on employment. However, after twelve months, we detect positive treatment effects: marginally significant for the full sample and larger in magnitude and significant for lower educated refugees and those who have not yet received a refugee status. These individuals face higher uncertainty about their residence status, they do not search effectively, lack access to alternative support programmes and may be disregarded by employers due to perceived higher hiring costs. Our results suggest that personalised job search assistance can improve labour market integration of these refugee groups by alleviating labour market frictions.</dc:description>
