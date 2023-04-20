@@ -20,7 +20,7 @@ All examples offer variation in the PID types used for name identification, depo
 
 All examples include annotations within the XML, to aid human readability.
 
-*Example 7 arises from decisions made on 19 April 2023.*
+*[Example 7 arises from decisions made on 19 April 2023.](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-data-examples.md#example-7)*
 
 ### Example 1
 An instance in which an AAM is not being exposed via the repository and instead a Gold VoR. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub
@@ -377,7 +377,7 @@ Demonstration of Rioxx used for describing an open grey literature deposit, ther
 Demonstration of Rioxx, following meeting of 19 April 2023, with the following adjustments:
 
 * MIME types unsupported for relational links to multipart external resources, such as datasets. `format` therefore dropped as an attribute in these cases, but also all other external relations where there is limited authority of assertion (this seems obvious but not something any of us have commented on up to now...)
-* Inclusion of `deposit_host="local"` attributes in dc:relation (with `deposit_host="external"` communicating the opposite)
+* Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
 * Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
 * Inclusion of `rel="item"` attribute in `dc:relation`
 
