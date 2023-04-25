@@ -10,7 +10,7 @@ The examples make the following assumptions:
 
 Each example uses real data, taken from a number of UK repositories, including Glasgow ([Enlighten](http://eprints.gla.ac.uk/)), Strathcyde ([Strathprints](https://strathprints.strath.ac.uk/)), and Imperial ([Spiral](https://spiral.imperial.ac.uk/)). The examples straddle typical use cases. These include the following most common anticipated use cases:
 
-* **Use case #1:** Local repository makes AAM deposit, in line with RRS conditions (i.e. under CC-BY and without embargo), and exposes a PID for this deposit in `dc:identifier` . `dc:relation` communicates actionable content, alongwith other essential attributes.
+* **Use case #1:** Local repository makes AAM deposit, in line with rights retention strategy (RRS) conditions (i.e. under CC-BY and without embargo), and exposes a PID for this deposit in `dc:identifier` . `dc:relation` communicates actionable content, along with other essential attributes.
 * **Use case #2:** Local repository makes Gold VoR deposit because an AAM deposit is unnecessary. Local repository handle is exposed in `dc:identifier` and actionable content is communicated in `dc:relation`, along with essential attributes (including PID minted by publisher of Gold VoR).
 
 All examples offer variations of other associative relations via `dc:relation`, such as relations to datasets, software, other expressions of the resource (e.g. preprint, AAM, VoR, etc.).
@@ -240,7 +240,7 @@ Another example of principal Rioxx use case: AAM has been made available under R
 
 ***
 ### Example 4
-This example uses the same data as in [Example 3,](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) our principal Rioxx use case. However, in this example multiple name identifiers are modelled hierarchically rather than using whitespace. To support hierarchy while maintaining existing `rioxxterms:author` semantics, `dc:creator`, `pids`, and `pid` are introduced as child elements for `rioxxterms:author`.
+This example uses the same data as in [Example 3,](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) our principal Rioxx use case. However, in this example multiple name identifiers are modelled hierarchically rather than using whitespace. To support hierarchy while maintaining existing `rioxxterms:author` semantics, `dc:creator`, `rioxxterms:pids`, and `rioxxterms:pid` are introduced as child elements for `rioxxterms:author`.
 
 All other aspect of this example remain the same as in [Example 3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3).
 
