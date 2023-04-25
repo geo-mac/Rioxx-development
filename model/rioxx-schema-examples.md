@@ -261,9 +261,9 @@ All other aspect of this example remain the same as in [Example 3](https://githu
 	<dc:creator>Stankovic, Vladimir</dc:creator>
 	<rioxxterms:pids>
 		<rioxxterms:pid>https://orcid.org/0000-0002-1075-2420</rioxxterms:pid>
-        <rioxxterms:pid>https://isni.org/isni/0000000124141121</rioxxterms:pid>
-        <rioxxterms:pid>https://viaf.org/viaf/667151246513444130519</rioxxterms:pid>
-        <rioxxterms:pid>https://www.wikidata.org/wiki/Q51802269</rioxxterms:pid>
+       		<rioxxterms:pid>https://isni.org/isni/0000000124141121</rioxxterms:pid>
+        	<rioxxterms:pid>https://viaf.org/viaf/667151246513444130519</rioxxterms:pid>
+        	<rioxxterms:pid>https://www.wikidata.org/wiki/Q51802269</rioxxterms:pid>
 	</rioxxterms:pids>	
 </rioxxterms:author>
     
@@ -278,7 +278,7 @@ All other aspect of this example remain the same as in [Example 3](https://githu
 	<dc:creator>Parastatidis, Emmanouil</dc:creator>
 	<rioxxterms:pids>
 		<rioxxterms:pid>https://orcid.org/0000-0001-5066-6917</rioxxterms:pid>
-        <rioxxterms:pid>https://isni.org/isni/0000000493517163</rioxxterms:pid>
+        	<rioxxterms:pid>https://isni.org/isni/0000000493517163</rioxxterms:pid>
 	</rioxxterms:pids>	
 </rioxxterms:author> 
 
@@ -286,7 +286,7 @@ All other aspect of this example remain the same as in [Example 3](https://githu
 	<dc:creator>Pytharouli, Stella</dc:creator>
 	<rioxxterms:pids>
 		<rioxxterms:pid>https://orcid.org/0000-0002-2899-1518</rioxxterms:pid>
-        <rioxxterms:pid>https://isni.org/isni/0000000351891635</rioxxterms:pid>
+        	<rioxxterms:pid>https://isni.org/isni/0000000351891635</rioxxterms:pid>
 	</rioxxterms:pids>	
 </rioxxterms:author>  
     
@@ -359,7 +359,8 @@ A variation on example 4, using data from a different repository (Enlighten). PI
 
 <rioxxterms:author first-named-author="true">
 	<dc:creator>Alfano, Mark</dc:creator>
-	<rioxxterms:pids>	     <rioxxterms:pid>http://viaf.org/viaf/8232163464412905680007</rioxxterms:pid>
+	<rioxxterms:pids>	     
+		<rioxxterms:pid>http://viaf.org/viaf/8232163464412905680007</rioxxterms:pid>
 	</rioxxterms:pids>	
 </rioxxterms:author>
 
@@ -371,7 +372,7 @@ A variation on example 4, using data from a different repository (Enlighten). PI
 	<dc:creator>Carter, J. Adam</dc:creator>
 	<rioxxterms:pids>
 		<rioxxterms:pid>http://orcid.org/0000-0002-1222-8331</rioxxterms:pid>
-        <rioxxterms:pid>https://isni.org/isni/0000000452130579</rioxxterms:pid>
+        	<rioxxterms:pid>https://isni.org/isni/0000000452130579</rioxxterms:pid>
 	</rioxxterms:pids>	
 </rioxxterms:author>
 
