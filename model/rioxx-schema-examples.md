@@ -1,12 +1,12 @@
 # Rioxx v3 - schema examples - 25 April 2023
 
 ### Introduction ###
-Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor, using real data from repositories.
+Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
 
 The examples make the following assumptions:
 
 * Where a PID is contained in `dc:identifer` at 'root' level, it resolves to a repository abstract/metadata page, or 'splash page'.
-* That certain essential attributes about the resource are described at 'root' level; in other words, aspects of the VoR are reflected at root, rather than root reflecting a more abstract notion of a 'work'.
+* That certain essential attributes about the resource are described at 'root' level; in other words, aspects of the VoR are reflected at root, rather than root reflecting a more abstract notion of a 'work' (though this may be something to revisit during future revisions to Rioxx).
 
 Each example uses real data, taken from a number of UK repositories, including Glasgow, Strathcyde, and Imperial. The examples straddle typical use cases. These include the following most common anticipated use cases:
 
@@ -19,6 +19,15 @@ All examples supplant the schema.org for the COAR Resource Type vocabulary.
 
 All examples include annotations within the XML, to aid human readability.
 
+
+#### Other notable updates ####
+* MIME types are unsupported for relational links to multipart external resources, such as datasets. `format` is therefore dropped as an attribute in 'dumb' relational links (and where there is inadequate authority of assertion) thereby simplifying them
+* Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
+* Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
+* Inclusion of `rel="item"` attribute in `dc:relation`
+
+The use of `rel="collection"` and `rel="item"` attributes in the above noted elements is a nod to Signposting, which harnesses the notion of 'publication boundaries' to help machines locate the resources that make up a publication. This also provides a useful conceptual tool for users of the schema to better understand the root vs. expression/relations modelling.
+
 #### PIDs: the mixed economy ####
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy!
 
@@ -26,19 +35,16 @@ All examples offer variation in the PID types used for name identification, depo
 
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
 
-#### Other notable updates ####
-* MIME types are unsupported for relational links to multipart external resources, such as datasets. `format` is therefore dropped as an attribute in 'dumb' relational links, but also all other external relations where there is limited authority of assertion (this seems obvious but not something any of us have commented on up to now...)
-* Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
-* Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
-* Inclusion of `rel="item"` attribute in `dc:relation`
-
-The use of `rel="collection"` and `rel="item"` attributes in the above noted elements is a nod to Signposting, which harnesses the notion of 'publication boundaries' to help machines locate the resources that make up a publication. This also provides a useful conceptual tool for users of the schema to better understand the root vs. expression/relations modelling.
+Examples 1, 2, 3 use "whitespace delimiting"
+Examples 4, 5, 6 use the creation of element hierarchies
 
 
 *[Example 7 arises from decisions made on 19 April 2023.](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-data-examples.md#example-7)*
 
 ### Example 1
-An instance in which an AAM is not being exposed via the repository and instead a Gold VoR. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub
+An instance in which an AAM is not being exposed via the repository and instead a Gold VoR has been deposited. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit or compliance purposes. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub.
+
+Note the use of whitespace delimiting of specific authors within `rioxxterms:author`, with both ORCIDs and ISNIs encoded.
 ```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
 <dc:description>The phenology, distribution, and size composition of plankton communities are changing rapidly in response to warming. This may lead to shifts in the prey fields of planktivorous fish, which play a key role in transferring energy up marine food chains. Here, we use 60 + years of Continuous Plankton Recorder data to explore temporal trends in key taxa and community traits in the prey field of planktivorous lesser sandeels (Ammodytes marinus) in the North Sea, the Faroes and southern Iceland. We found marked spatial variation in the prey field, with Calanus copepods generally being much more common in the northern part of the study area. In the western North Sea, the estimated amount of available energy in the prey field has decreased by more than 50% since the 1960s. This decrease was accompanied by declining abundances of small copepods, and shifts in the timing of peak annual prey abundances. Further, the estimated average prey community body size has increased in several of the locations considered. Overall, our results point to the importance of regional studies of prey fields, and caution against inferring ecological consequences based only on large-scale trends in key taxa or mean community traits.</dc:description>
@@ -47,10 +53,10 @@ An instance in which an AAM is not being exposed via the repository and instead 
 <dc:source>1054-3139</dc:source>
 <dc:title>Spatio-temporal variation in the zooplankton prey of lesser sandeels : species and community trait patterns from the continuous plankton recorder</dc:title>
 <dcterms:dateAccepted>2022-05-12</dcterms:dateAccepted>
-<rioxxterms:author uri="https://orcid.org/0000-0002-8508-3911" first-named-author="true">Olin, Agnes B.</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0002-8508-3911 https://isni.org/isni/0000000493574125" first-named-author="true">Olin, Agnes B.</rioxxterms:author>
 <rioxxterms:author uri="https://orcid.org/0000-0002-1892-9497">Banas, Neil S.</rioxxterms:author>
 <rioxxterms:author>Johns, David G.</rioxxterms:author>
-<rioxxterms:author uri="https://orcid.org/0000-0001-6602-3107">Heath, Michael R.</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0001-6602-3107 https://isni.org/isni/0000000497572207">Heath, Michael R.</rioxxterms:author>
 <rioxxterms:author>Wright, Peter J.</rioxxterms:author>
 <rioxxterms:author>Nager, Ruedi G.</rioxxterms:author>
 <rioxxterms:publication_date>2022-06-29</rioxxterms:publication_date>
@@ -62,8 +68,8 @@ An instance in which an AAM is not being exposed via the repository and instead 
     NE/L003090/1
 </rioxxterms:grant>
 
-<!-- 'Work-esque' description at root level - describing Gold CC-BY VoR in repository, therefore no requirement for PID of AMM. Conventional repo handle communicated in dc:identifier. PID for VoR communicated in dc:relation -->
-<dc:identifier>https://strathprints.strath.ac.uk/81232/</dc:identifier>
+<!-- 'Work-esque' description at root level - describing Gold CC-BY VoR in repository, therefore no requirement for PID of AAM. Conventional repo handle communicated in dc:identifier. PID for VoR communicated in dc:relation -->
+<dc:identifier rel="collection">https://strathprints.strath.ac.uk/81232/</dc:identifier>
 
 <!-- relation to 'expression' of harvestable content, in this case a Gold VoR deposited in a local repo -->
 <dc:relation type="https://purl.org/coar/resource_type/c_6501" 
@@ -73,28 +79,26 @@ An instance in which an AAM is not being exposed via the repository and instead 
     pid="https://doi.org/10.1021/acs.jcim.9b00304"
     accessRightsURI="https://purl.org/coar/access_right/c_abf2"
     license_ref="https://creativecommons.org/licenses/by/4.0" 
-    format="application/pdf">
-	https://strathprints.strath.ac.uk/81232/1/Olin_etal_ICES_JMS_2022_Spatio_temporal_variation.pdf
+    deposit_host="local"
+	rel="item"
+    format="application/pdf">	https://strathprints.strath.ac.uk/81232/1/Olin_etal_ICES_JMS_2022_Spatio_temporal_variation.pdf
 </dc:relation>
 
 <!-- related  dataset -->
 <dc:relation type="https://purl.org/coar/resource_type/FF4C-28RK" 
-    accessRightsURI="https://purl.org/coar/access_right/c_abf2" 
-    format="text/csv">
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
             https://doi.org/10.17031/1673
 </dc:relation>
 
 <!-- related  dataset -->
 <dc:relation type="https://purl.org/coar/resource_type/FF4C-28RK" 
-    accessRightsURI="https://purl.org/coar/access_right/c_abf2" 
-    format="text/csv">
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
             https://doi.org/10.7489/610-1
 </dc:relation>
 
 <!-- related  software -->
 <dc:relation type="https://purl.org/coar/resource_type/c_c950" 
-    accessRightsURI="https://purl.org/coar/access_right/c_abf2" 
-    format="text/csv">
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
             https://github.com/agnesolin/CPRsandeel
 </dc:relation>
 
@@ -102,6 +106,8 @@ An instance in which an AAM is not being exposed via the repository and instead 
 ```
 ### Example 2
 This example demonstrates the common use case of exposing AAM data, with PID communicated in `dc:identifier` (CORE OAI PID).
+
+Again, several name identifiers are captured within the `rioxxterms:author` uri attribute, using whitespace as a delimiter.
 ```
 
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
@@ -111,7 +117,7 @@ This example demonstrates the common use case of exposing AAM data, with PID com
 <dc:source>1549-9596</dc:source>
 <dc:title>Intuition-enabled machine learning beats the competition when joint human-robot teams perform inorganic chemical experiments</dc:title>
 <dcterms:dateAccepted>2019-04-26</dcterms:dateAccepted>
-<rioxxterms:author uri="https://orcid.org/0000-0002-0144-8566">Battisti, Michele</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0002-0144-8566 https://isni.org/isni/0000000419028329">Battisti, Michele</rioxxterms:author>
 <rioxxterms:author>Duros, Vasilios</rioxxterms:author>
 <rioxxterms:author uri="https://orcid.org/0000-0002-2211-4389">Grizou, Jonathan</rioxxterms:author>
 <rioxxterms:author uri="https://orcid.org/0000-0002-5222-9611">Sharma, Abhishek</rioxxterms:author>
@@ -119,7 +125,7 @@ This example demonstrates the common use case of exposing AAM data, with PID com
 <rioxxterms:author>Bubliauskas, Andrius</rioxxterms:author>
 <rioxxterms:author>Frei, Przemyslaw</rioxxterms:author>
 <rioxxterms:author uri="https://orcid.org/0000-0002-0086-5173">Miras, Haralampos N.</rioxxterms:author>
-<rioxxterms:author uri="https://orcid.org/0000-0001-8035-5757">Cronin, Leroy</rioxxterms:author>
+<rioxxterms:author uri="https://orcid.org/0000-0001-8035-5757 https://isni.org/isni/0000000499267281">Cronin, Leroy</rioxxterms:author>
 <rioxxterms:publication_date>2019-06-24</rioxxterms:publication_date>
 <rioxxterms:record_public_release_date>2019-04-26</rioxxterms:record_public_release_date>
 <rioxxterms:type uri="http://purl.org/coar/resource_type/c_2df8fbb1">research article</rioxxterms:type>
@@ -138,7 +144,7 @@ This example demonstrates the common use case of exposing AAM data, with PID com
 </rioxxterms:project>
 
 <!-- 'Work-esque' description at root level -->
-<dc:identifier>https://oai.core.ac.uk/oai:eprints.gla.ac.uk:190277</dc:identifier>
+<dc:identifier rel="collection">https://oai.core.ac.uk/oai:eprints.gla.ac.uk:190277</dc:identifier>
 
 <!-- relation to 'expression' of harvestable content, etc. -->
 <dc:relation type="https://purl.org/coar/resource_type/c_6501" 
@@ -147,7 +153,9 @@ This example demonstrates the common use case of exposing AAM data, with PID com
     rioxx_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     pid="https://doi.org/pid-for-a-repo-splash-page"
     accessRightsURI="https://purl.org/coar/access_right/c_abf2"
-    license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0" 
+    license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0"
+    deposit_host="local"
+	rel="item" 
     format="application/pdf">
             https://eprints.gla.ac.uk/190277/7/190277.pdf
 </dc:relation>
@@ -165,9 +173,8 @@ This example demonstrates the common use case of exposing AAM data, with PID com
 </dc:relation>
 
 <!-- related  dataset -->
-<dc:relation type="https://schema.org/DataSet" 
-    accessRightsURI="https://purl.org/coar/access_right/c_abf2" 
-    format="text/csv">
+<dc:relation type="http://purl.org/coar/resource_type/FF4C-28RK" 
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
             https://doi.org/10.17868/dataset_123456
 </dc:relation>
 
@@ -176,7 +183,7 @@ This example demonstrates the common use case of exposing AAM data, with PID com
 ```
 
 ### Example 3
-Another example of principal Rioxx use case: AAM available under RRS, with linkage to related dataset and VoR expression. PID in `dc:identifer` at root is a DOI.
+Another example of principal Rioxx use case: AAM has been made available under RRS, as per UKRI Open Access Policy, and therefore requires a PID at repository level (a DOI in this example). Included are also links to a related dataset and VoR expression. PID in `dc:identifer` at root is a DOI. Whitespace delimiting again demonstrated in some instances of `rioxxterms:author`.
 ```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
 <dc:description>Passive seismics help us understand subsurface processes, e.g. landslides, mining, geothermal systems etc. and help predict and mitigate their effects. Continuous monitoring results in long seismic records that may contain various sources, which need to be classified. Manual detection and labeling of recorded seismic events is not only time consuming but can also be inconsistent when done manually, even in the case where it is done by the same expert. Therefore, an automated approach for classification of continuous microseismic recordings based on a Convolutional Neural Network (CNN) is proposed, with a multiclassifier architecture that classifies earthquakes, rockfalls and low signal to noise ratio quakes. Furthermore, we propose three CNN architectures that take as input time series data, Short Time Fourier Transform (STFT) and Continuous Wavelet Transform (CWT) maps. The suitability of these three networks is rigorously assessed over five months of continuous seismometer recordings from the active Super-Sauze landslide in France. We observe that all three architectures have excellent and very similar performance. Furthermore, we evaluate transferability to a geographically distinct seismically active site in Larissa, Greece. We demonstrate that the proposed network is able to detect all 86 catalogued earthquake events, having only been trained on the Super-Sauze dataset and shows good agreement with manually detected events. This is promising as it could replace painstaking manual labelling of events in large recordings..</dc:description>
@@ -202,7 +209,7 @@ Another example of principal Rioxx use case: AAM available under RRS, with linka
 </rioxxterms:grant>
 
 <!-- 'Work-esque' description at root level; dc:identifier PID resolving to RRS AAM deposit splash page. -->
-<dc:identifier>https://doi.org/10.17868/strath.00084907</dc:identifier>
+<dc:identifier rel="collection">https://doi.org/10.17868/strath.00084907</dc:identifier>
 
 <!-- relation to 'expression' of harvestable content, etc. -->
 <dc:relation type="https://purl.org/coar/resource_type/c_6501" 
@@ -211,7 +218,9 @@ Another example of principal Rioxx use case: AAM available under RRS, with linka
     rioxx_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     pid="https://doi.org/10.17868/strath.00084907"
     accessRightsURI="https://purl.org/coar/access_right/c_abf2"
-    license_ref="https://creativecommons.org/licenses/by/4.0/" 
+    license_ref="https://creativecommons.org/licenses/by/4.0/"
+    deposit_host="local"
+	rel="item" 
     format="application/pdf">
             https://strathprints.strath.ac.uk/84907/7/Jiang_etal_IEEETGRS_2023_Microseismic_event_classification.pdf
 </dc:relation>
@@ -224,13 +233,119 @@ Another example of principal Rioxx use case: AAM available under RRS, with linka
 
 <!-- related  dataset -->
 <dc:relation type="https://purl.org/coar/resource_type/c_ddb1" 
-    accessRightsURI="https://purl.org/coar/access_right/c_abf2" 
-    format="application/pdf">
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
             https://doi.org/10.15129/589f7af3-26b3-4a93-b042-fbc8100fc977
 </dc:relation>
 
 </rioxx>
 
+```
+
+
+### Example 4
+This example uses the same data as in Example 3, our principal Rioxx use case. However, in this example multiple name identifiers are modelling hierarchically rather than using whitespace.
+
+All other aspect of this example remain the same as in Example 3.
+
+```
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>Passive seismics help us understand subsurface processes, e.g. landslides, mining, geothermal systems etc. and help predict and mitigate their effects. Continuous monitoring results in long seismic records that may contain various sources, which need to be classified. Manual detection and labeling of recorded seismic events is not only time consuming but can also be inconsistent when done manually, even in the case where it is done by the same expert. Therefore, an automated approach for classification of continuous microseismic recordings based on a Convolutional Neural Network (CNN) is proposed, with a multiclassifier architecture that classifies earthquakes, rockfalls and low signal to noise ratio quakes. Furthermore, we propose three CNN architectures that take as input time series data, Short Time Fourier Transform (STFT) and Continuous Wavelet Transform (CWT) maps. The suitability of these three networks is rigorously assessed over five months of continuous seismometer recordings from the active Super-Sauze landslide in France. We observe that all three architectures have excellent and very similar performance. Furthermore, we evaluate transferability to a geographically distinct seismically active site in Larissa, Greece. We demonstrate that the proposed network is able to detect all 86 catalogued earthquake events, having only been trained on the Super-Sauze dataset and shows good agreement with manually detected events. This is promising as it could replace painstaking manual labelling of events in large recordings..</dc:description>
+<dc:language>en</dc:language>
+<dc:publisher uri="https://isni.org/isni/0000000121063391">IEEE</dc:publisher>
+<dc:source>0196-2892</dc:source>
+<dc:title>Microseismic event classification with time, frequency and wavelet domain convolutional neural networks</dc:title>
+ <dcterms:dateAccepted>2023-03-17</dcterms:dateAccepted>
+    
+<rioxxterms:author first-named-author="true">
+    <dc:creator>Jiang, Jiaxin</dc:creator>
+</rioxxterms:author>
+    
+<rioxxterms:author>
+	<dc:creator>Stankovic, Vladimir</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-1075-2420</rioxxterms:pid>
+        <rioxxterms:pid>https://isni.org/isni/0000000124141121</rioxxterms:pid>
+        <rioxxterms:pid>https://viaf.org/viaf/667151246513444130519</rioxxterms:pid>
+        <rioxxterms:pid>https://www.wikidata.org/wiki/Q51802269</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>
+    
+<rioxxterms:author>
+	<dc:creator>Stankovic, Lina</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-8112-1976</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>    
+    
+<rioxxterms:author>
+	<dc:creator>Parastatidis, Emmanouil</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0001-5066-6917</rioxxterms:pid>
+        <rioxxterms:pid>https://isni.org/isni/0000000493517163</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author> 
+
+  <rioxxterms:author>
+	<dc:creator>Pytharouli, Stella</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-2899-1518</rioxxterms:pid>
+        <rioxxterms:pid>https://isni.org/isni/0000000351891635</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>  
+    
+<rioxxterms:author>
+	<dc:creator>Miras, Haralampos N.</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-0086-5173</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>     
+
+<rioxxterms:author>
+	<dc:creator>Cronin, Leroy</dc:creator>
+	<rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0001-8035-5757</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>
+
+<rioxxterms:publication_date>2023-03-27</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2023-03-28</rioxxterms:record_public_release_date>
+<rioxxterms:type uri="https://purl.org/coar/resource_type/c_2df8fbb1">research article</rioxxterms:type>
+<rioxxterms:grant
+    funder_name="Engineering and Physical Sciences Research Council"
+    funder_id="https://ror.org/0439y7842">
+    EP/S005560/1
+</rioxxterms:grant>
+
+<!-- 'Work-esque' description at root level; dc:identifier PID resolving to RRS AAM deposit splash page. -->
+<dc:identifier rel="collection">https://doi.org/10.17868/strath.00084907</dc:identifier>
+
+<!-- relation to 'expression' of harvestable content, etc. -->
+<dc:relation type="https://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2023-03-28" 
+    resource_exposed_date="2023-03-28" 
+    rioxx_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+    pid="https://doi.org/10.17868/strath.00084907"
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2"
+    license_ref="https://creativecommons.org/licenses/by/4.0/"
+    deposit_host="local"
+	rel="item" 
+    format="application/pdf">
+            https://strathprints.strath.ac.uk/84907/7/Jiang_etal_IEEETGRS_2023_Microseismic_event_classification.pdf
+</dc:relation>
+
+<!-- Other expressions - publisher version -->
+<dc:relation type="https://purl.org/coar/resource_type/c_6501" 
+    rioxx_version="https://purl.org/coar/version/c_970fb48d4fbd8a85">
+            https://doi.org/10.1109/TGRS.2023.3262412
+</dc:relation>
+
+<!-- related  dataset -->
+<dc:relation type="https://purl.org/coar/resource_type/c_ddb1" 
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2">
+            https://doi.org/10.15129/589f7af3-26b3-4a93-b042-fbc8100fc977
+</dc:relation>
+
+</rioxx>
 ```
 
 ### Example 4
