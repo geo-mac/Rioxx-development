@@ -32,8 +32,8 @@ All examples offer variation in the PID types used for name identification, depo
 
 **Note too** that examples *variant approaches* in the treatment of multiple PIDs in instances where a repository system may wish to capture more than one PID to define a property. 
 
-* Examples 1, 2, 3 use "whitespace delimiting"
-* Examples 4, 5, 6 use the creation of element hierarchies
+* Examples [1](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-1), [2](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-2), [3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) use "whitespace delimiting"
+* Examples [4](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-4), [5](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-5), [6](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-6) use the creation of element hierarchies
 
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
 
