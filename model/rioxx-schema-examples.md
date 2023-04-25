@@ -243,9 +243,9 @@ Another example of principal Rioxx use case: AAM has been made available under R
 
 
 ### Example 4
-This example uses the same data as in Example 3, our principal Rioxx use case. However, in this example multiple name identifiers are modelling hierarchically rather than using whitespace.
+This example uses the same data as in [Example 3,](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) our principal Rioxx use case. However, in this example multiple name identifiers are modelled hierarchically rather than using whitespace. To support hierarchy while maintaining existing `rioxxterms:author` semantics, `dc:creator`, `pids`, and `pid` are introduced as child elements for `rioxxterms:author`.
 
-All other aspect of this example remain the same as in Example 3.
+All other aspect of this example remain the same as in [Example 3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3).
 
 ```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
