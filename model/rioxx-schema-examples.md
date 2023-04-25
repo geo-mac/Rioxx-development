@@ -8,7 +8,7 @@ The examples make the following assumptions:
 * Where a PID is contained in `dc:identifer` at 'root' level, it resolves to a repository abstract/metadata page, or 'splash page'.
 * That certain essential attributes about the resource are described at 'root' level; in other words, aspects of the VoR are reflected at root, rather than root reflecting a more abstract notion of a 'work' (though this may be something to revisit during future revisions to Rioxx).
 
-Each example uses real data, taken from a number of UK repositories, including Glasgow, Strathcyde, and Imperial. The examples straddle typical use cases. These include the following most common anticipated use cases:
+Each example uses real data, taken from a number of UK repositories, including Glasgow ([Enlighten](http://eprints.gla.ac.uk/)), Strathcyde ([Strathprints](https://strathprints.strath.ac.uk/)), and Imperial ([Spiral](https://spiral.imperial.ac.uk/)). The examples straddle typical use cases. These include the following most common anticipated use cases:
 
 * **Use case #1:** Local repository makes AAM deposit, in line with RRS conditions (i.e. under CC-BY and without embargo), and exposes a PID for this deposit in `dc:identifier` . `dc:relation` communicates actionable content, alongwith other essential attributes.
 * **Use case #2:** Local repository makes Gold VoR deposit because an AAM deposit is unnecessary. Local repository handle is exposed in `dc:identifier` and actionable content is communicated in `dc:relation`, along with essential attributes (including PID minted by publisher of Gold VoR).
@@ -19,8 +19,7 @@ All examples supplant the schema.org for the COAR Resource Type vocabulary.
 
 All examples include annotations within the XML, to aid human readability.
 
-
-#### Other notable updates ####
+### Other notable updates ###
 * MIME types are unsupported for relational links to multipart external resources, such as datasets. `format` is therefore dropped as an attribute in 'dumb' relational links (and where there is inadequate authority of assertion) thereby simplifying them
 * Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
 * Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
@@ -28,10 +27,10 @@ All examples include annotations within the XML, to aid human readability.
 
 The use of `rel="collection"` and `rel="item"` attributes in the above noted elements is a nod to Signposting, which harnesses the notion of 'publication boundaries' to help machines locate the resources that make up a publication. This also provides a useful conceptual tool for users of the schema to better understand the root vs. expression/relations modelling.
 
-#### PIDs: the mixed economy ####
+### PIDs: the mixed economy ###
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy!
 
-**Note too** that examples x x x and x x x present *variant approaches* in the treatment of multiple PIDs in instances where a repository system may wish to capture more than one PID to define a property. 
+**Note too** that examples 1, 2, 3 and x x x present *variant approaches* in the treatment of multiple PIDs in instances where a repository system may wish to capture more than one PID to define a property. 
 
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
 
@@ -241,7 +240,7 @@ Another example of principal Rioxx use case: AAM has been made available under R
 
 ```
 
-
+***
 ### Example 4
 This example uses the same data as in [Example 3,](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) our principal Rioxx use case. However, in this example multiple name identifiers are modelled hierarchically rather than using whitespace. To support hierarchy while maintaining existing `rioxxterms:author` semantics, `dc:creator`, `pids`, and `pid` are introduced as child elements for `rioxxterms:author`.
 
