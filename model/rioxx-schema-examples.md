@@ -30,12 +30,16 @@ The use of `rel="collection"` and `rel="item"` attributes in the above noted ele
 ### PIDs: the mixed economy ###
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy!
 
+#### Capturing multiple PIDs for persons
 **Note too** that examples *variant approaches* in the treatment of multiple PIDs in instances where a repository system may wish to capture more than one PID to define a property. 
 
 * Examples [1](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-1), [2](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-2), [3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) use "whitespace delimiting"
 * Examples [4](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-4), [5](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-5), [6](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-6) use the creation of element hierarchies
 
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
+
+#### Capturing multiple PIDs for expressions
+Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. Example 7, however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs.
 
 ***
 ### Example 1
@@ -524,3 +528,103 @@ Variation of examples 4 and 5, using different data -- this time from Spiral. PI
 
 ```
 
+***
+### Example 7 
+This is a variation of the data in Example 6, using different modelling of the values contained in `dc:relation`. Specifically, this includes the introduction of the new properties used in `rioxxterms:author`, namely `rioxxterms:pids` and `rioxxterms:pid`, but within `dc:relation` to capture multiple PIDs. An additional property of r`ioxxterms:resource` has been created to better distinguish actionable resources. Note too that attributes -- previously used in `dc:relation` -- have been inherited by `rioxxterms:resource`. This maintains original semantics for the actionable resource, while avoiding confusion with `rioxxterms:pids`, where the semantics cannot be asserted.
+
+```
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>The kinematic lower bound for the single scattering of neutrons produced in deuterium-tritium (DT) fusion reactions produces a backscatter edge in the measured neutron spectrum. The energy spectrum of backscattered neutrons is dependent on the scattering ion velocity distribution. As the neutrons preferentially scatter in the densest regions of the capsule, the neutron backscatter edge presents a unique measurement of the hydrodynamic conditions in the dense DT fuel. It is shown that the spectral shape of the edge is determined by the scattering rate weighted fluid velocity and temperature of the dense DT fuel layer during neutron production. In order to fit the neutron spectrum, a model for the various backgrounds around the backscatter edge is developed and tested on synthetic data produced from hydrodynamic simulations of OMEGA implosions. It is determined that the analysis could be utilized on current inertial confinement fusion experiments in order to measure the dense fuel properties.</dc:description>
+<dc:language>en</dc:language>
+<dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
+<dc:source>1070-664X</dc:source>
+<dc:title>Neutron backscatter edge: A measure of the hydrodynamic properties of the dense DT fuel at stagnation in ICF experiments</dc:title>
+<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted>
+
+<rioxxterms:author first-named-author="true">
+    <dc:creator>Crilly, A. J.</dc:creator>
+    <rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-0429-9332</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Appelbe, B. D.</dc:creator>
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Mannion, O. M.</dc:creator>
+    <rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0001-8029-5109</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Forrest, C. J.</dc:creator>
+</rioxxterms:author>
+
+<rioxxterms:author>
+    <dc:creator>Gopalaswamy, V.</dc:creator>
+    <rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-8013-9314</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author> 
+    
+<rioxxterms:author>
+    <dc:creator>Walsh, C. A.</dc:creator>
+    <rioxxterms:pids>
+		<rioxxterms:pid>https://orcid.org/0000-0002-6639-3543</rioxxterms:pid>
+	</rioxxterms:pids>	
+</rioxxterms:author>  
+    
+<rioxxterms:author>
+    <dc:creator>Chittenden, J. P.</dc:creator>
+</rioxxterms:author>
+
+<rioxxterms:publication_date>2020-01-03</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2020-01-20</rioxxterms:record_public_release_date>
+<rioxxterms:type uri="http://purl.org/coar/resource_type/c_2df8fbb1">research article</rioxxterms:type>
+
+<rioxxterms:grant
+    funder_name="Engineering and Physical Sciences Research Council"
+    funder_id="https://ror.org/0439y7842">
+    EP/P010288/1
+</rioxxterms:grant>
+<rioxxterms:grant
+    funder_name="Lawrence Livermore National Laboratory"
+    funder_id="https://ror.org/041nk4h53">
+    B618573
+</rioxxterms:grant>
+
+<!-- 'Work-esque' description at root level, identified with PID (handle.net) -->
+<dc:identifier rel="collection">http://hdl.handle.net/10044/1/76123</dc:identifier>
+
+<!-- relation to 'expression' of harvestable content, plus multiple related PIDs through the introduction of rioxxterms:pids, etc. -->
+<dc:relation>
+    <rioxxterms:resource type="https://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2010-01-20" 
+    resource_exposed_date="2020-01-20" 
+    rioxx_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+    accessRightsURI="https://purl.org/coar/access_right/c_abf2"
+    license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0"
+    deposit_host="local"
+	rel="item"
+    format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2/POP19-AR-58732_accepted.pdf</rioxxterms:resource>  
+    <rioxxterms:pids>
+        <rioxxterms:pid>https://hdl.handle.net/10044/1/76123</rioxxterms:pid>
+        <rioxxterms:pid>https://doi.org/10.48550/arXiv.1909.10713</rioxxterms:pid>
+    </rioxxterms:pids>
+</dc:relation>
+
+<!-- Other expressions - publisher version -->
+<dc:relation>
+    <rioxxterms:pids>
+        <rioxxterms:pid type="http://purl.org/coar/resource_type/c_6501" 
+        rioxx_version="http://purl.org/coar/version/c_970fb48d4fbd8a85">
+            https://doi.org/10.1063/1.5128830
+        </rioxxterms:pid>    
+    <rioxxterms:pids>    
+</dc:relation>
+
+</rioxx>
+```
