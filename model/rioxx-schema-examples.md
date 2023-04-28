@@ -39,7 +39,7 @@ All examples offer variation in the PID types used for name identification, depo
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
 
 #### Capturing multiple PIDs for expressions
-Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. Example 7, however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs.
+Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. [Example 7](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-7), however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs.
 
 ***
 ### Example 1
@@ -531,6 +531,8 @@ Variation of examples 4 and 5, using different data -- this time from Spiral. PI
 ***
 ### Example 7 
 This is a variation of the data in Example 6, using different modelling of the values contained in `dc:relation`. Specifically, this includes the introduction of the new properties used in `rioxxterms:author`, namely `rioxxterms:pids` and `rioxxterms:pid`, but within `dc:relation` to capture multiple PIDs. An additional property of r`ioxxterms:resource` has been created to better distinguish actionable resources. Note too that attributes -- previously used in `dc:relation` -- have been inherited by `rioxxterms:resource`. This maintains original semantics for the actionable resource, while avoiding confusion with `rioxxterms:pids`, where the semantics cannot be asserted.
+
+This example includes the re-modelling of `dc:relation`, including multiple PIDs from the real world, i.e. locally minted Handle.net and externally minted DOI on arXiv.
 
 ```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
