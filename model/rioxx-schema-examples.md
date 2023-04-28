@@ -6,7 +6,7 @@ Below are several Rioxx metadata examples, each adhering to v3.0 but with additi
 
 The examples make the following assumptions:
 
-* Where a PID is contained in `dc:identifer` at 'root' level, it resolves to a repository abstract/metadata page, or 'splash page'.
+* Where a PID is contained in `dc:identifer` at 'root' level, it resolves to a repository abstract/metadata page, or 'landing page', as per good practice. Possible values here may include a PID (e.g. DOI, Handle.net, OAI identifier (CORE), URN, etc.) or a repository URL (where there is no compliance requirement to mint a local PID). 
 * That certain essential attributes about the resource are described at 'root' level; in other words, aspects of the VoR are reflected at root, rather than root reflecting a more abstract notion of a 'work' (though this may be something to revisit during future revisions to Rioxx).
 
 Each example uses real data, taken from a number of UK repositories, including Glasgow ([Enlighten](http://eprints.gla.ac.uk/)), Strathcyde ([Strathprints](https://strathprints.strath.ac.uk/)), and Imperial ([Spiral](https://spiral.imperial.ac.uk/)). The examples straddle typical use cases. These include the following most common anticipated use cases:
@@ -614,8 +614,8 @@ This example includes the re-modelling of `dc:relation`, including multiple PIDs
 	rel="item"
     format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2/POP19-AR-58732_accepted.pdf</rioxxterms:resource>  
     <rioxxterms:pids>
-        <rioxxterms:pid>https://hdl.handle.net/10044/1/76123</rioxxterms:pid>
-        <rioxxterms:pid>https://doi.org/10.48550/arXiv.1909.10713</rioxxterms:pid>
+        <rioxxterms:pid rel="collection">https://hdl.handle.net/10044/1/76123</rioxxterms:pid>
+        <rioxxterms:pid rel="collection">https://doi.org/10.48550/arXiv.1909.10713</rioxxterms:pid>
     </rioxxterms:pids>
 </dc:relation>
 
