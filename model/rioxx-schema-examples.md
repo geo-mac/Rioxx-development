@@ -1,7 +1,7 @@
 # Rioxx v3 - schema examples - 25 April 2023
 ### Updated 28 April 2023
 
-### Introduction ###
+## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
 
 The examples make the following assumptions:
@@ -20,7 +20,7 @@ All examples supplant the schema.org for the COAR Resource Type vocabulary.
 
 All examples include annotations within the XML, to aid human readability.
 
-### Other notable updates ###
+## Other notable updates ##
 * MIME types are unsupported for relational links to multipart external resources, such as datasets. `format` is therefore dropped as an attribute in 'dumb' relational links (and where there is inadequate authority of assertion) thereby simplifying them
 * Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
 * Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
@@ -28,10 +28,10 @@ All examples include annotations within the XML, to aid human readability.
 
 The use of `rel="collection"` and `rel="item"` attributes in the above noted elements is a nod to Signposting, which harnesses the notion of 'publication boundaries' to help machines locate the resources that make up a publication. This also provides a useful conceptual tool for users of the schema to better understand the root vs. expression/relations modelling.
 
-### PIDs: the mixed economy ###
+## PIDs: the mixed economy ##
 All examples offer variation in the PID types used for name identification, deposits, organizational identification, and so on. The PID mixed economy!
 
-#### Capturing multiple PIDs for persons
+### Capturing multiple PIDs for persons
 **Note too** that examples *variant approaches* in the treatment of multiple PIDs in instances where a repository system may wish to capture more than one PID to define a property. 
 
 * Examples [1](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-1), [2](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-2), [3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) use "whitespace delimiting"
@@ -39,7 +39,7 @@ All examples offer variation in the PID types used for name identification, depo
 
 A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
 
-#### Capturing multiple PIDs for expressions
+### Capturing multiple PIDs for expressions
 Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. [Example 7](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-7), however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs.
 
 ***
