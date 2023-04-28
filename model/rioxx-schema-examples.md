@@ -1,4 +1,5 @@
 # Rioxx v3 - schema examples - 25 April 2023
+### Updated 28 April 2023
 
 ### Introduction ###
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
