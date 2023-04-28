@@ -25,6 +25,7 @@ All examples include annotations within the XML, to aid human readability.
 * Inclusion of `deposit_host="local"` attributes in `dc:relation`(with `deposit_host="external"` communicating the opposite)
 * Inclusion of `rel="collection"` attribute in `dc:identifier` at root level
 * Inclusion of `rel="item"` attribute in `dc:relation`
+* And, in some of the examples, the introduction of several new elements: `rioxxterms:pids`, `rioxxterms:pid` and `rioxxterms:resource`.
 
 The use of `rel="collection"` and `rel="item"` attributes in the above noted elements is a nod to Signposting, which harnesses the notion of 'publication boundaries' to help machines locate the resources that make up a publication. This also provides a useful conceptual tool for users of the schema to better understand the root vs. expression/relations modelling.
 
@@ -37,7 +38,7 @@ All examples offer variation in the PID types used for name identification, depo
 * Examples [1](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-1), [2](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-2), [3](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-3) use "whitespace delimiting"
 * Examples [4](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-4), [5](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-5), [6](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-6) use the creation of element hierarchies
 
-A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution.
+A question for the **RGG** on **23 May 2023** is whether we wish to permit the capture of multiple PIDs and, if so, which approach is preferred: *whitespace delimiting* or *hierarchical modelling*. Both have their pros and cons, although the latter presents a superior longer term solution and introduces several new elements.
 
 ### Capturing multiple PIDs for expressions
 Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. [Example 7](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-7), however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs.
