@@ -6,7 +6,7 @@
 3. [PIDs: The mixed economy](#pids-the-mixed-economy)
 * [Capturing multiple PIDs for persons](#capturing-multiple-pids-for-persons)
 * [Capturing mutlipes PIDs for expressions](#capturing-multiple-pids-for-expressions)
-* 
+4. [Examples](#examples)
 
 ## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
@@ -52,7 +52,7 @@ Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but ha
 
 ***
 ## Examples
-***
+
 ### Example 1
 An instance in which an AAM is not being exposed via the repository and instead a Gold VoR has been deposited. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit or compliance purposes. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub.
 
