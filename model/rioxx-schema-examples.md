@@ -1,8 +1,12 @@
 # Rioxx v3 - schema examples - 25 April 2023
 ### Updated 28 April 2023
 
-[Introduction](#introduction)
-Other notable updates
+1. [Introduction](#introduction)
+2. [Other notable updates](#other-notable-updates)
+3. [PIDs: The mixed economy](#pids-the-mixed-economy)
+* [Capturing multiple PIDs for persons](#capturing-multiple-pids-for-persons)
+* [Capturing mutlipes PIDs for expressions](#capturing-multiple-pids-for-expressions)
+* 
 
 ## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
@@ -46,6 +50,8 @@ A question for the **RGG** on **23 May 2023** is whether we wish to permit the c
 ### Capturing multiple PIDs for expressions
 Examples 1-3 and 4-6 have differed in their modelling of PIDs for persons but have been identical in their modeling of expressions and/or related scholarly in `dc:relation`. [Example 7](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md#example-7), however, introduces an alternative approach to modelling the content of `dc:relation`, thereby enabling the capture of multiple PIDs. As for the issue of multiple PIDs for persons, the **RGG must decide whether capturing mutliple PIDs is something to be supported**.
 
+***
+## Examples
 ***
 ### Example 1
 An instance in which an AAM is not being exposed via the repository and instead a Gold VoR has been deposited. This VoR is deposited in the repository and therefore no PID need be minted for a local AAM deposit or compliance purposes. This example uses real data from Strathprints and includes two related datasets and a piece of related software on GitHub.
