@@ -7,13 +7,13 @@
 	* [Capturing multiple PIDs for persons](#capturing-multiple-pids-for-persons)
 	* [Capturing mutlipes PIDs for expressions](#capturing-multiple-pids-for-expressions)
 1. [Examples](#examples)
-2. [Example 1](#example-1)
-3. [Example 2](#example-2)
-4. [Example 3](#example-3)
-5. [Example 4](#example-4)
-6. [Example 5](#example-5)
-7. [Example 6](#example-6)
-8. [Example 7](#example-7)
+	* [Example 1](#example-1)
+	* [Example 2](#example-2)
+	* [Example 3](#example-3)
+	* [Example 4](#example-4)
+	* [Example 5](#example-5)
+	* [Example 6](#example-6)
+	* [Example 7](#example-7)
 
 ## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
