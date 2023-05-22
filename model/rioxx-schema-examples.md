@@ -1,5 +1,5 @@
 # Rioxx v3 - schema examples - 25 April 2023
-### Updated 28 April 2023
+### Updated 22 May 2023
 
 1. [Introduction](#introduction)
 2. [Other notable updates](#other-notable-updates)
@@ -14,6 +14,7 @@
 	* [Example 5](#example-5)
 	* [Example 6](#example-6)
 	* [Example 7](#example-7)
+	* [Example 8](#example-8) (updated example 22 May 2023)
 
 ## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
@@ -648,3 +649,100 @@ This example includes the re-modelling of `dc:relation`, including multiple PIDs
 
 </rioxx>
 ```
+
+### Example 8: 22 May 2023
+Following comments from RGG members, an updated example. Inline XML comments highlight relevant changes.
+
+Aide memoire for @g3om4c @ RGG meeting: `rioxxterms:pid` version `dc:identifier`.
+
+```<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+<dc:description>The kinematic lower bound for the single scattering of neutrons produced in deuterium-tritium (DT) fusion reactions produces a backscatter edge in the measured neutron spectrum. The energy spectrum of backscattered neutrons is dependent on the scattering ion velocity distribution. As the neutrons preferentially scatter in the densest regions of the capsule, the neutron backscatter edge presents a unique measurement of the hydrodynamic conditions in the dense DT fuel. It is shown that the spectral shape of the edge is determined by the scattering rate weighted fluid velocity and temperature of the dense DT fuel layer during neutron production. In order to fit the neutron spectrum, a model for the various backgrounds around the backscatter edge is developed and tested on synthetic data produced from hydrodynamic simulations of OMEGA implosions. It is determined that the analysis could be utilized on current inertial confinement fusion experiments in order to measure the dense fuel properties.</dc:description>
+<dc:language>en</dc:language>
+<dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
+<dc:source>1070-664X</dc:source>
+<dc:title>Neutron backscatter edge: A measure of the hydrodynamic properties of the dense DT fuel at stagnation in ICF experiments</dc:title>
+<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted>
+
+<!-- Shallowed hierarchy for rioxxterms:pid; previously included superordinate element rioxxterms:pids -->    
+    
+<rioxxterms:author first-named-author="true">
+    <dc:creator>Crilly, A. J.</dc:creator>
+    <rioxxterms:pid>https://orcid.org/0000-0002-0429-9332</rioxxterms:pid>
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Appelbe, B. D.</dc:creator>
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Mannion, O. M.</dc:creator>
+    <rioxxterms:pid>https://orcid.org/0000-0001-8029-5109</rioxxterms:pid>
+</rioxxterms:author>
+    
+<rioxxterms:author>
+    <dc:creator>Forrest, C. J.</dc:creator>
+</rioxxterms:author>
+
+<rioxxterms:author>
+    <dc:creator>Gopalaswamy, V.</dc:creator>
+    <rioxxterms:pid>https://orcid.org/0000-0002-8013-9314</rioxxterms:pid>	
+</rioxxterms:author> 
+    
+<rioxxterms:author>
+    <dc:creator>Walsh, C. A.</dc:creator>
+    <rioxxterms:pid>https://orcid.org/0000-0002-6639-3543</rioxxterms:pid>	
+</rioxxterms:author>  
+    
+<rioxxterms:author>
+    <dc:creator>Chittenden, J. P.</dc:creator>
+</rioxxterms:author>
+
+<rioxxterms:publication_date>2020-01-03</rioxxterms:publication_date>
+<rioxxterms:record_public_release_date>2020-01-20</rioxxterms:record_public_release_date>
+<rioxxterms:type uri="http://purl.org/coar/resource_type/c_2df8fbb1">research article</rioxxterms:type>
+
+<rioxxterms:grant
+    funder_name="Engineering and Physical Sciences Research Council"
+    funder_id="https://ror.org/0439y7842">
+    EP/P010288/1
+</rioxxterms:grant>
+<rioxxterms:grant
+    funder_name="Lawrence Livermore National Laboratory"
+    funder_id="https://ror.org/041nk4h53">
+    B618573
+</rioxxterms:grant>
+
+<!-- 'Work-esque' description at root level, identified with PID (handle.net) -->
+<dc:identifier rel="collection">http://hdl.handle.net/10044/1/76123</dc:identifier>
+
+<!-- relation to 'expression' of harvestable content, plus multiple related PIDs through the introduction of rioxxterms:pids, etc. -->
+<!-- Updated coar_version from rioxx_version to avoid confusion -->
+<!-- Updated access_rights from accessRightsURI to be consistent with snakecase conventions elsewhere -->
+<!-- Shallowed hierarchy for rioxxterms:pid; previously included superordinate element rioxxterms:pids. Do we want to use dc:identifier? -->
+<dc:relation>
+    <rioxxterms:resource type="https://purl.org/coar/resource_type/c_6501" 
+    deposit_date="2010-01-20" 
+    resource_exposed_date="2020-01-20" 
+    coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+    access_rights="https://purl.org/coar/access_right/c_abf2"
+    license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0"
+    deposit_host="local"
+	rel="item"
+    format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2/POP19-AR-58732_accepted.pdf</rioxxterms:resource>  
+    
+    <rioxxterms:pid>https://hdl.handle.net/10044/1/76123</rioxxterms:pid>
+    <rioxxterms:pid>https://doi.org/10.48550/arXiv.1909.10713</rioxxterms:pid>
+    
+</dc:relation>
+
+<!-- Other expressions - publisher version -->
+<dc:relation>
+    <rioxxterms:pid type="http://purl.org/coar/resource_type/c_6501" 
+        coar_version="http://purl.org/coar/version/c_970fb48d4fbd8a85">
+            https://doi.org/10.1063/1.5128830
+    </rioxxterms:pid>     
+</dc:relation>
+
+</rioxx>
+```
+
