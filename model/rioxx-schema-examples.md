@@ -14,7 +14,7 @@
 	* [Example 5](#example-5)
 	* [Example 6](#example-6)
 	* [Example 7](#example-7)
-	* [Example 8](#example-8) (updated example 22 May 2023)
+	* [Example 8](#example-8-22-may-2023) (updated example 22 May 2023)
 
 ## Introduction ##
 Below are several Rioxx metadata examples, each adhering to v3.0 but with additional modifications arising from recent RGG meetings and detailed discussions between Petr Knoth, Mick Eadie and George Macgregor.
