@@ -1,8 +1,11 @@
 # Rioxx v3 - schema redux - 30 May 2023
 
 1. [Introduction](#introduction)
-1. [Examples](#examples)
-
+2. [Examples](#examples)
+- [Example 1](#example-1)
+- [Example 2](#example-2)
+- [Example 3](#example-3)
+- [Example 4](#example-4)
 
 ## Introduction ##
 The Rioxx schema examples below reflect agreements made at the recent RGG meeting. of 23 May 2023. Below are several Rioxx metadata examples, each adhering to v3.0 but with [additional modifications made following previous work by group members](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md) and the adjustments agreed on 23 May. (redux, if you will)
@@ -316,7 +319,7 @@ Specific adjustments from 23 May include the following:
 <dc:identifier rel="collection">https://strathprints.strath.ac.uk/70117/</dc:identifier>
 
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501"
-																			 coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+	coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     deposit_date="2019-12-11" 
     resource_exposed_date="2019-12-11"     
     cite_as="https://strathprints.strath.ac.uk/"
