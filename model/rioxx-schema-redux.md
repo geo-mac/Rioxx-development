@@ -16,7 +16,7 @@ Specific adjustments from 23 May include the following:
 
 - `dc:creator` should remain as a subproperty of `rioxxterms:author`;
 - `dc:identifier` be used as a subproperty of `rioxxterms:author` instead of the proposed `rioxxterms:pid`;
-- the `type` attribute label should be re-labeled to `coar_type`, owing to feedback received by PK from H. Van de Sompel that `type` was too closely associated with MIME types and ergo could cause confusion to both humans and machines;
+- the `type` attribute label should be re-labeled to `coar_type`, owing to feedback that `type` was too closely associated with MIME types and ergo could cause confusion to both humans and machines;
 - `rioxxterms:resource` be 'promoted' to a 'root' level property instead of as a subproperty of `dc:relation`, with `dc:relation` retained for other expressions, related items (i.e. dumb(er) relations); and,
 - that the `pid` attribute be re-labelled as `cite_as`.
 
@@ -86,9 +86,7 @@ Specific adjustments from 23 May include the following:
 <!-- 'Work-esque' description at root level, identified with PID (handle.net) -->
 <dc:identifier rel="collection">http://hdl.handle.net/10044/1/76123</dc:identifier>
 
-<rioxxterms:resource 
-	coar_type="https://purl.org/coar/resource_type/c_6501" 
-	coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+<rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     deposit_date="2010-01-20" 
     resource_exposed_date="2020-01-20"     
     access_rights="https://purl.org/coar/access_right/c_abf2"
