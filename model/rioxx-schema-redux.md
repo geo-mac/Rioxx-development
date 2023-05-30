@@ -315,15 +315,15 @@ Specific adjustments from 23 May include the following:
 <!-- 'Work-esque' description at root level; dc:identifier PID resolving to AAM deposit splash page. -->
 <dc:identifier rel="collection">https://strathprints.strath.ac.uk/70117/</dc:identifier>
 
-<rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" 
-	coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
+<rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501"
+																			 coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     deposit_date="2019-12-11" 
     resource_exposed_date="2019-12-11"     
     cite_as="https://strathprints.strath.ac.uk/"
     access_rights_="https://purl.org/coar/access_right/c_abf2"
     license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0/"
     deposit_host="local"
-	rel="item"  
+    rel="item"  
     format="application/pdf">
            https://strathprints.strath.ac.uk/70117/7/Wilson_Heath_OS2019_Increasing_turbidity_in_the_North_Sea_during_the_20th_century.pdf
 </rioxxterms:resource>
