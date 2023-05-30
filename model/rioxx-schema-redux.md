@@ -39,8 +39,9 @@ All other aspect of this example remain the same as in [Example 3](https://githu
 Aide memoire for @g3om4c @ RGG meeting: `rioxxterms:pid` version `dc:identifier`.
 
 
-```
-```<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
+
+```xml
+<rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
 <dc:description>The kinematic lower bound for the single scattering of neutrons produced in deuterium-tritium (DT) fusion reactions produces a backscatter edge in the measured neutron spectrum. The energy spectrum of backscattered neutrons is dependent on the scattering ion velocity distribution. As the neutrons preferentially scatter in the densest regions of the capsule, the neutron backscatter edge presents a unique measurement of the hydrodynamic conditions in the dense DT fuel. It is shown that the spectral shape of the edge is determined by the scattering rate weighted fluid velocity and temperature of the dense DT fuel layer during neutron production. In order to fit the neutron spectrum, a model for the various backgrounds around the backscatter edge is developed and tested on synthetic data produced from hydrodynamic simulations of OMEGA implosions. It is determined that the analysis could be utilized on current inertial confinement fusion experiments in order to measure the dense fuel properties.</dc:description>
 <dc:language>en</dc:language>
 <dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
@@ -70,12 +71,12 @@ Aide memoire for @g3om4c @ RGG meeting: `rioxxterms:pid` version `dc:identifier`
 
 <rioxxterms:author>
     <dc:creator>Gopalaswamy, V.</dc:creator>
-    <rioxxterms:pid>https://orcid.org/0000-0002-8013-9314</rioxxterms:pid>	
+    <dc:identifier>https://orcid.org/0000-0002-8013-9314</dc:identifier>	
 </rioxxterms:author> 
     
 <rioxxterms:author>
     <dc:creator>Walsh, C. A.</dc:creator>
-    <rioxxterms:pid>https://orcid.org/0000-0002-6639-3543</rioxxterms:pid>	
+    <dc:identifier>https://orcid.org/0000-0002-6639-3543</dc:identifier>	
 </rioxxterms:author>  
     
 <rioxxterms:author>
@@ -104,21 +105,21 @@ Aide memoire for @g3om4c @ RGG meeting: `rioxxterms:pid` version `dc:identifier`
 <!-- Updated coar_version from rioxx_version to avoid confusion -->
 <!-- Updated access_rights from accessRightsURI to be consistent with snakecase conventions elsewhere -->
 <!-- Shallowed hierarchy for rioxxterms:pid; previously included superordinate element rioxxterms:pids. Do we want to use dc:identifier? -->
-<dc:relation>
-    <rioxxterms:resource type="https://purl.org/coar/resource_type/c_6501" 
+
+<rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" 
     deposit_date="2010-01-20" 
     resource_exposed_date="2020-01-20" 
     coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     access_rights="https://purl.org/coar/access_right/c_abf2"
     license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0"
     deposit_host="local"
-	rel="item"
-    format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2/POP19-AR-58732_accepted.pdf</rioxxterms:resource>  
+	rel="item"    format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2/POP19-AR-58732_accepted.pdf
+</rioxxterms:resource>  
     
     <rioxxterms:pid>https://hdl.handle.net/10044/1/76123</rioxxterms:pid>
     <rioxxterms:pid>https://doi.org/10.48550/arXiv.1909.10713</rioxxterms:pid>
     
-</dc:relation>
+
 
 <!-- Other expressions - publisher version -->
 <dc:relation>
@@ -130,12 +131,7 @@ Aide memoire for @g3om4c @ RGG meeting: `rioxxterms:pid` version `dc:identifier`
 
 </rioxx>
 ```
-```
 
-
-
-
-```
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/ http://www.rioxx.net/schema/v3.0/rioxx/rioxx.xsd">
 <dc:description>Passive seismics help us understand subsurface processes, e.g. landslides, mining, geothermal systems etc. and help predict and mitigate their effects. Continuous monitoring results in long seismic records that may contain various sources, which need to be classified. Manual detection and labeling of recorded seismic events is not only time consuming but can also be inconsistent when done manually, even in the case where it is done by the same expert. Therefore, an automated approach for classification of continuous microseismic recordings based on a Convolutional Neural Network (CNN) is proposed, with a multiclassifier architecture that classifies earthquakes, rockfalls and low signal to noise ratio quakes. Furthermore, we propose three CNN architectures that take as input time series data, Short Time Fourier Transform (STFT) and Continuous Wavelet Transform (CWT) maps. The suitability of these three networks is rigorously assessed over five months of continuous seismometer recordings from the active Super-Sauze landslide in France. We observe that all three architectures have excellent and very similar performance. Furthermore, we evaluate transferability to a geographically distinct seismically active site in Larissa, Greece. We demonstrate that the proposed network is able to detect all 86 catalogued earthquake events, having only been trained on the Super-Sauze dataset and shows good agreement with manually detected events. This is promising as it could replace painstaking manual labelling of events in large recordings..</dc:description>
 <dc:language>en</dc:language>
