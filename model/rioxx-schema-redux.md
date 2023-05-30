@@ -2,10 +2,10 @@
 
 1. [Introduction](#introduction)
 2. [Examples](#examples)
-- [Example 1](#example-1)
-- [Example 2](#example-2)
-- [Example 3](#example-3)
-- [Example 4](#example-4)
+* [Example 1](#example-1)
+* [Example 2](#example-2)
+* [Example 3](#example-3)
+* [Example 4](#example-4)
 
 ## Introduction ##
 The Rioxx schema examples below reflect agreements made at the recent RGG meeting. of 23 May 2023. Below are several Rioxx metadata examples, each adhering to v3.0 but with [additional modifications made following previous work by group members](https://github.com/geo-mac/Rioxx-development/blob/development/model/rioxx-schema-examples.md) and the adjustments agreed on 23 May. (redux, if you will)
