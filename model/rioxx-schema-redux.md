@@ -171,7 +171,6 @@ Specific adjustments from 23 May include the following:
 <!-- 'Work-esque' description at root level; dc:identifier PID resolving to RRS AAM deposit splash page. -->
 <dc:identifier rel="collection">https://doi.org/10.17868/strath.00084907</dc:identifier>
 
-
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" 
 	coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
     deposit_date="2023-03-28" 
