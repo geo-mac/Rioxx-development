@@ -21,6 +21,8 @@ Specific adjustments from 23 May include the following:
 - that the `pid` attribute be re-labelled as `cite_as`.
 
 Property and attribute labelling should be fixed for consistency and to avoid confusion.
+
+*Comment on 'authority of assertion':* It occurred to me that for some 'dumb relations' via `dc:relation` we might want to permit the authority to assert, say, attributes such as licensing. This might apply in instances where institutions operate a portfolio of repositories, such as in the case of University of Glasgow. This is not an unusual scenario. In such instances there *is* authority to assert specific attributes about a dumb relation.
 ***
 ## Examples
 
