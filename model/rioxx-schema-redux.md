@@ -32,9 +32,7 @@ Specific adjustments from 23 May include the following:
 <dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
 <dc:source>1070-664X</dc:source>
 <dc:title>Neutron backscatter edge: A measure of the hydrodynamic properties of the dense DT fuel at stagnation in ICF experiments</dc:title>
-<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted>
-
-<!-- Shallowed hierarchy for rioxxterms:pid; previously included superordinate element rioxxterms:pids -->    
+<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted>  
     
 <rioxxterms:author first-named-author="true">
     <dc:creator>Crilly, A. J.</dc:creator>
@@ -83,7 +81,6 @@ Specific adjustments from 23 May include the following:
     B618573
 </rioxxterms:grant>
 
-<!-- 'Work-esque' description at root level, identified with PID (handle.net) -->
 <dc:identifier rel="collection">http://hdl.handle.net/10044/1/76123</dc:identifier>
 
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
@@ -169,7 +166,6 @@ Specific adjustments from 23 May include the following:
     EP/S005560/1
 </rioxxterms:grant>
 
-<!-- 'Work-esque' description at root level; dc:identifier PID resolving to RRS AAM deposit splash page. -->
 <dc:identifier rel="collection">https://doi.org/10.17868/strath.00084907</dc:identifier>
 
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
@@ -246,7 +242,6 @@ Specific adjustments from 23 May include the following:
     61387
 </rioxxterms:grant>
 
-<!-- 'Work-esque' description at root level; dc:identifier PID resolving to AAM deposit splash page. -->
 <dc:identifier rel="collection">https://oai.core.ac.uk/oai:eprints.gla.ac.uk:217807</dc:identifier>
 
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501"   coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
@@ -311,7 +306,6 @@ Specific adjustments from 23 May include the following:
     61387
 </rioxxterms:grant>
 
-<!-- 'Work-esque' description at root level; dc:identifier PID resolving to AAM deposit splash page. -->
 <dc:identifier rel="collection">https://strathprints.strath.ac.uk/70117/</dc:identifier>
 
 <rioxxterms:resource coar_type="https://purl.org/coar/resource_type/c_6501" coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
