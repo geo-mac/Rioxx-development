@@ -20,6 +20,7 @@ Specific adjustments from 23 May include the following:
 - `rioxxterms:resource` be 'promoted' to a 'root' level property instead of as a subproperty of `dc:relation`, with `dc:relation` retained for other expressions, related items (i.e. dumb(er) relations); and,
 - that the `pid` attribute be re-labelled as `cite_as`.
 
+Property and attribute labelling should be fixed for consistency and to avoid confusion.
 ***
 ## Examples
 
