@@ -5,10 +5,12 @@ type: metadata_profile_property
 title: rioxxterms:version
 cardinality: Exactly one
 requirement: Mandatory
-metadata_profile: v3-0-rc-2
+metadata_profile: v3-0-final
 
 
 ---
+@@@ Is this necessary at 'root' level, when version is encoded with greater specificity at file level, within `rioxxterms:resource` and `dc:relation`? @g3om4c
+
 
 This property indicates which 'version' of ***the resource*** is being described. The value of this property uses concepts defined by [NISO RP-8-2008 Journal Article Versions (JAV) standard](https://www.niso.org/publications/niso-rp-8-2008-jav) and adapted by the [COAR Version Types vocabulary]([Controlled Vocabularies for Repositories: Version Types](https://vocabularies.coar-repositories.org/version_types/)). 
 

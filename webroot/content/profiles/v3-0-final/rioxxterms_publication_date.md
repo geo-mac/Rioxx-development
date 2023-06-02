@@ -1,5 +1,5 @@
 ---
-date: '2021-01-15T14:00:43+00:00'
+date: '2023-06-02T14:00:43+00:00'
 draft: false
 type: metadata_profile_property
 title: rioxxterms:publication_date
@@ -17,8 +17,6 @@ Example:
     2011-02-23
 </rioxxterms:publication_date>
 ```
-
-As Rioxx can be used to help establish compliance with funders' mandates and licensing of open access publications, the critical dates for the assertion of compliance are those held in the *start_date* attributes of the *ali:license_ref* properties.
 
 It is acknowledged that the publication date conventions of certain publishers vary, making the identification of precise publication dates problematic, especially in instances where a publisher assigns a resource to a seasonal issue date, e.g. Spring 2020, Winter 2019, etc. To maintain adherence to the above noted encoding conventions, resources with publication dates assigned to seasonal issues should be expressed according to the following convention, with months expressed as per:
 
@@ -39,6 +37,7 @@ Examples:
 ```
 
 *Winter 2019 (end of year)*
+
 ```xml
 <rioxxterms:publication_date>
     2019-12
