@@ -9,7 +9,7 @@ metadata_profile: v3-0-rc-2
 
 ---
 
-In Rioxx `rioxxterms:contributor` is a *super-property* of `dc:contributor` and `dc:identifier`. `rioxxterms:contributor` **MUST** include an instance of the `dc:contributor` subproperty. An instance of the `dc:identifier` subproperty **SHOULD** be included.
+In Rioxx `rioxxterms:contributor` is a *super-property* and container property for `dc:contributor` and `dc:identifier`. `rioxxterms:contributor` **MUST** include an instance of the `dc:contributor` subproperty. An instance of the `dc:identifier` subproperty **SHOULD** be included.
 
 This property is designed to describe an entity – for example the name of a person, organisation or service – responsible for making contributions to the content of ***the resource***. As many `rioxxterms:contributor` properties may be entered as required.
 

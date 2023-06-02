@@ -8,7 +8,7 @@ requirement: Mandatory
 metadata_profile: v3-0-final
 
 ---
-`rioxxterms:author` contains attribution data pertaining to ***the resource***. In Rioxx `rioxxterms:author` is a *super-property* of `dc:creator` and `dc:identifier`. `rioxxterms:author` **MUST** include an instance of the `dc:creator` subproperty. An instance of the `dc:identifier` subproperty **SHOULD** be included.
+`rioxxterms:author` is a container for attribution data pertaining to ***the resource***. In Rioxx `rioxxterms:author` is a *super-property* of `dc:creator` and `dc:identifier`. `rioxxterms:author` **MUST** include an instance of the `dc:creator` subproperty. An instance of the `dc:identifier` subproperty **SHOULD** be included.
 
 `dc:creator` is the entity responsible of creating the ***the resource***. This may be a person, organisation or service, but is most commonly a person. `dc:creator` should contain a text string of the creator name. Where the creator is a person, the **RECOMMENDED** format is to add text in the form Last Name, First Name(s). 
 
