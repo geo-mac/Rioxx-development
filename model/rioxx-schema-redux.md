@@ -35,8 +35,8 @@ Property and attribute labelling should be fixed for consistency and to avoid co
 <dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
 <dc:source>1070-664X</dc:source>
 <dc:title>Neutron backscatter edge: A measure of the hydrodynamic properties of the dense DT fuel at stagnation in ICF experiments</dc:title>
-<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted>  
-    
+<dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted> 
+
 <rioxxterms:author first-named-author="true">
     <dc:creator>Crilly, A. J.</dc:creator>
     <dc:identifier>https://orcid.org/0000-0002-0429-9332</dc:identifier>
