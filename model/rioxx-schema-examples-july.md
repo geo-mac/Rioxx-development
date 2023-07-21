@@ -76,11 +76,6 @@ format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2
 </rioxxterms:file>  
     
 <rioxxterms:relation coar_type="http://purl.org/coar/resource_type/c_6501" 
-        coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa">
-            https://hdl.handle.net/10044/1/76123   
-</rioxxterms:relation>
-
-<rioxxterms:relation coar_type="http://purl.org/coar/resource_type/c_6501" 
         coar_version="http://purl.org/coar/version/c_970fb48d4fbd8a8">
             https://doi.org/10.1063/1.5128830   
 </rioxxterms:relation>
