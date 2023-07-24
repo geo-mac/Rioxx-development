@@ -12,7 +12,6 @@ Refreshed examples based on RGG comment on draft candidate release.
 <rioxx xsi:schemaLocation="http://www.rioxx.net/schema/v3.0/rioxx/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rioxxterms="http://docs.rioxx.net/schema/v3.0/rioxxterms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <dc:description>The kinematic lower bound for the single scattering of neutrons produced in deuterium-tritium (DT) fusion reactions produces a backscatter edge in the measured neutron spectrum. The energy spectrum of backscattered neutrons is dependent on the scattering ion velocity distribution. As the neutrons preferentially scatter in the densest regions of the capsule, the neutron backscatter edge presents a unique measurement of the hydrodynamic conditions in the dense DT fuel. It is shown that the spectral shape of the edge is determined by the scattering rate weighted fluid velocity and temperature of the dense DT fuel layer during neutron production. In order to fit the neutron spectrum, a model for the various backgrounds around the backscatter edge is developed and tested on synthetic data produced from hydrodynamic simulations of OMEGA implosions. It is determined that the analysis could be utilized on current inertial confinement fusion experiments in order to measure the dense fuel properties.</dc:description>
 <dc:language>en</dc:language>
-<dc:publisher uri="https://isni.org/isni/0000000405564665">AIP Publishing</dc:publisher>
 <dc:source>1070-664X</dc:source>
 <dc:title>Neutron backscatter edge: A measure of the hydrodynamic properties of the dense DT fuel at stagnation in ICF experiments</dc:title>
 <dcterms:dateAccepted>2019-12-01</dcterms:dateAccepted> 
@@ -50,6 +49,10 @@ Refreshed examples based on RGG comment on draft candidate release.
 </rioxxterms:creator>
 
 <rioxxterms:publication_date>2020-01-03</rioxxterms:publication_date>
+<rioxxterms:publisher>
+	<rioxxterms:name>AIP</rioxxterms:name>
+	<rioxxterms:id>https://isni.org/isni/0000000405564665"</rioxxterms:id>
+</rioxxterms:publisher>
 <rioxxterms:record_public_release_date>2020-01-20</rioxxterms:record_public_release_date>
 <rioxxterms:type>http://purl.org/coar/resource_type/c_2df8fbb1</rioxxterms:type>
 
@@ -145,7 +148,7 @@ format="application/pdf">https://spiral.imperial.ac.uk/bitstream/10044/1/76123/2
     funder_id="https://ror.org/0439y7842">
     EP/S005560/1
 </rioxxterms:grant>
-
+<rioxxterms:project>https://handle.net/10378.1/1590366</rioxxterms:project>
 <dc:identifier>https://doi.org/10.17868/strath.00084907</dc:identifier>
 
 <rioxxterms:file coar_type="https://purl.org/coar/resource_type/c_6501" coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
