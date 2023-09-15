@@ -67,6 +67,7 @@ Example includes inline code comments.
     <!-- @Petr relation to the manuscript that is under the custodianship of this repository -->
 	
 	<!-- @g3om4c propose that 'type' be re-lalled as 'format', as per DCMI semantics, to avoid confusion with dc:type above -->
+<!-- @Petr & @g3om4c Reinstatement of dc:relation, replacing rioxxterms:file -->
 	
     <dc:relation
             rel="item"
