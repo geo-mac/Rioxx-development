@@ -75,7 +75,7 @@ Example includes inline code comments.
             coar_version="https://purl.org/coar/version/c_ab4af688f83e57aa"
             deposit_date="2019-12-11"
             resource_exposed_date="2019-12-11"
-            cite_as="https://strathprints.strath.ac.uk/"
+            cite_as="https://strathprints.strath.ac.uk/70117/"
             access_rights_="https://purl.org/coar/access_right/c_abf2"
             license_ref="https://creativecommons.org/licenses/by-nc-nd/4.0/">
         https://strathprints.strath.ac.uk/70117/7/Wilson_Heath_OS2019_Increasing_turbidity_in_the_North_Sea_during_the_20th_century.pdf
